@@ -1,0 +1,52 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  min-width: 1200px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page-header {
+  display: flex;
+  background-color: #46454d;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-combined {
+  width: 250px;
+  
+}
+
+.logo {
+  
+  
+}
+
+.face {
+  position: relative;
+  z-index: 0;
+  left: 100px;
+  top: 45px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin-right: 20px;
+}
+
+.nav-items li a {
+  color: #c8b374;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
