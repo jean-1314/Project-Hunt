@@ -1,3 +1,10 @@
+/*
+background-color: rgba(220, 44, 44, 0.3); red
+background-color: rgba(57, 191, 44, 0.3); green
+background-color: rgba(57, 48, 213, 0.3); blue
+ yellow
+*/
+
 html, body {
   padding: 0;
   margin: 0;
@@ -10,37 +17,64 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .page-header {
-  display: flex;
   background-color: #46454d;
-  align-items: center;
-  justify-content: space-around;
+  min-height: 100px;
 }
 
 .logo-combined {
-  width: 250px;
-  
+  float: left;
+  width: 270px;
+  margin-top: 15px;
+  position: relative;  
 }
 
 .logo {
-  
-  
+  position: relative;
+  float: right;
+  width: 215px;
+  height: 70px;
+  z-index: 1;
 }
 
 .face {
-  position: relative;
+  width: 50px;
+  height: 50px;
+  float: left;
+  top: 10px;
+  left: 29px;
   z-index: 0;
-  left: 100px;
-  top: 45px;
+  position: absolute;
+}
+
+.navbar {
+  width: 750px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 40px;
 }
 
 .nav-items {
   list-style: none;
-  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-items li {
   margin-right: 20px;
+  display: inline-block;
 }
 
 .nav-items li a {
@@ -49,4 +83,89 @@ body {
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.language-switcher {
+  width: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  float: right;
+  margin-top: 25px;
+}
+
+.language-switcher ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lang-ru {
+  background-color: #86af49;
+}
+
+.lang-ru a{
+  text-decoration: none;
+  color: #525a88;
+}
+
+.lang-en {
+  background-color: #525a88;
+}
+
+.lang-en a{
+  text-decoration: none;
+  color: #c8b374;
+}
+
+.background-img {
+  min-height: 610px;
+  background-color: #000000;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.greetings {
+  padding-top: 500px;
+  text-align: center;
+}
+
+.greetings h1 {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+}
+
+.welcome-container {
+  background-color: rgba(200, 179, 116, 0.4);
+  min-height: 105px;
+  text-align: center;
+}
+
+.welcome-container h2 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #864c24;
+}
+
+.welcome-toggle {
+  /*display: none;*/
+  background-color: rgba(202, 189, 42, 0.3);
+}
+
+.welcome-toggle p {
+  margin: 0;
+}
+
+.contact-details {
+  margin: 0;
+}
+
+.avatar {
+  margin: 0;
 }
