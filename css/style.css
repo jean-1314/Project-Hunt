@@ -15,55 +15,66 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: normal;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*.page-wrapper {
+  
+}*/
 
 .container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2.2%;
 }
 
-.clearfix::after {
+/*.clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 .page-header {
+  display: flex;
+  justify-content: flex-start;
   background-color: #46454d;
-  min-height: 100px;
+  width: 100%;
+  min-height: 7vh;
 }
 
 .logo-combined {
-  float: left;
-  width: 270px;
-  margin-top: 15px;
-  position: relative;  
+  display: flex;
+  position: relative;
+  align-self: center;
+  width: 21%;
+  margin-left: 4%;
 }
 
 .logo {
   position: relative;
-  float: right;
-  width: 215px;
-  height: 70px;
+  width: 70%;
+  padding-left: 15%;
   z-index: 1;
 }
 
 .face {
-  width: 50px;
-  height: 50px;
-  float: left;
-  top: 10px;
-  left: 29px;
-  z-index: 0;
   position: absolute;
+  width: 20%;
+  top: 6%;
+  left: 5%;
+  z-index: 0;
 }
 
 .navbar {
-  width: 750px;
-  float: left;
-  margin-left: 50px;
-  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
 }
 
 .nav-items {
@@ -85,23 +96,31 @@ body {
   text-transform: uppercase;
 }
 
+.nav-items li a:hover {
+  color: #864c24;
+}
+
 .language-switcher {
-  width: 50px;
-  min-height: 50px;
+  display: inline-block;
+  position: absolute;
+  width: 4%;
   font-weight: bold;
   text-align: center;
-  float: right;
-  margin-top: 25px;
+  top: 5.1%;
+  right: 2%;
 }
 
 .language-switcher ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .lang-ru {
   background-color: #86af49;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .lang-ru a{
@@ -111,6 +130,8 @@ body {
 
 .lang-en {
   background-color: #525a88;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .lang-en a{
