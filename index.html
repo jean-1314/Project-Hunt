@@ -2,6 +2,7 @@
 <html lang="zxx">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иван Савитский</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -25,18 +26,18 @@
 
           <nav class="navbar">
             <ul class="nav-items">
-              <li><a href=#>Приветствие</a></li>
-              <li><a href=#>Обо мне</a></li>
-              <li><a href=#>Резюме</a></li>
-              <li><a href=#>Портфолио</a></li>
-              <li><a href=#>Контакты</a></li>
+              <li class="nav-item"><a href=#>Приветствие</a></li>
+              <li class="nav-item"><a href=#>Обо мне</a></li>
+              <li class="nav-item"><a href=#>Резюме</a></li>
+              <li class="nav-item"><a href=#>Портфолио</a></li>
+              <li class="nav-item"><a href=#>Контакты</a></li>
             </ul>
           </nav>
 
           <nav class="language-switcher">
             <ul>
-              <li class="lang-ru"><a rel="alternate" href="#" hreflang="ru" lang="ru">RU</a></li>
-              <li class="lang-en"><a rel="alternate" href="#" hreflang="en" lang="en">EN</a></li>
+              <li class="lang-ru"><a class="lang-ru-link" rel="alternate" href="#" hreflang="ru" lang="ru">RU</a></li>
+              <li class="lang-en"><a class="lang-en-link" rel="alternate" href="#" hreflang="en" lang="en">EN</a></li>
             </ul>
           </nav>
         
@@ -54,6 +55,7 @@
       <section class="welcome">
         <div class="welcome-container">
           <h2>Добро пожаловать!</h2>
+          <button class="welcome-button" type="button"></button>
         </div>       
         <div class="welcome-toggle container">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -232,5 +234,6 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
