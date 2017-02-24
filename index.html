@@ -53,121 +53,197 @@
       </section>
 
       <section class="welcome">
-        <div class="welcome-container">
+        <div class="welcome-container container">
           <h2>Добро пожаловать!</h2>
-          <button class="welcome-button" type="button"></button>
+          <button class="welcome-btn" type="button"></button>
         </div>       
-        <div class="welcome-toggle container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="welcome-toggle">
+          <p class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div> 
         
       </section>
 
-        <div class="contacts">
-          <ul class="contact-details">
-            <li><svg class="icon-mail"></svg>mail@example.com</li>
-            <li><svg class="icon-phone"></svg>+7-903-777-77-77</li>
-            <li><svg class="icon-location"></svg>г. Москва</li>
-          </ul>
+      <section class="contacts">
+        <ul class="contact-details container">
+          <li class="contact-item">mail@example.com</li>
+          <li class="contact-item">+7-903-777-77-77</li>
+          <li class="contact-item">г. Москва</li>
+        </ul>
+      </section>
+
+      <section class="profile container">
+
+        <div class="skills">
+
+          <figure class="avatar">
+            <img src="http://placehold.it/300x365" alt="profile photo" width-"300" height="365"> 
+          </figure>
+
+          <div class="skillset">
+            <h2>Навыки</h2>
+
+            <div class="skillbar-container">
+              <span>HTML</span>
+              <div class="skillbar">                
+                <div class="skill html"><span>Уверенно владею</span></div>
+              </div>
+
+              <span>CSS</span>
+              <div class="skillbar">
+                <div class="skill css"><span>Уверенно владею</span></div>
+              </div>
+
+              <span>JavaScript</span>
+              <div class="skillbar">
+                <div class="skill js"><span>Могу написать простой код</span></div>
+              </div>
+
+              <span>Git</span>
+              <div class="skillbar">
+                <div class="skill git"><span>Есть небольшой опыт</span></div>
+              </div>
+
+              <span>Photoshop</span>
+              <div class="skillbar">
+                <div class="skill ps"><span>Необходимый минимум для верстки</span></div>
+              </div>
+
+              <span>Less/SASS</span>
+              <div class="skillbar">
+                <div class="skill pre"><span>Знаком с принципами работы</span></div>
+              </div>
+
+              <span>JQuery</span>
+              <div class="skillbar">
+                <div class="skill jq"><span>Знаком с принципами работы</span></div>
+              </div>
+
+              <span>Bootstrap</span>
+              <div class="skillbar">
+                <div class="skill bs"><span>Есть минимальный опыт</span></div>
+              </div>
+
+              <span>Angular 1.x/React</span>
+              <div class="skillbar">
+                <div class="skill angr"><span>Знаком с принципами работы</span></div>
+              </div>
+
+            </div>  
+          </div>
         </div>
 
-        <section class="profile">
-
-          <div class="skills">
-
-            <figure class="avatar">
-              <img src="#" alt="" height="" width=""> 
-            </figure>
-
-            <div class="skillset">
-              <h2>Навыки</h2>
-                <!--- Skillbar goes here -->
-            </div>
-          </div>
-
-          <div class="about-me">
-            <h2>Обо мне</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </section>
+        <div class="about-me">
+          <h2>Обо мне</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
 
         <section class="resume">
 
-          <div class="resume-heading">
-            <h2>Резюме</h2>
-            <span>Образование и опыт работы</span>
-          </div>
-            
-          <div class="resume-download">Скачать в PDF</div>
-
-          <div class="resume-container">
-
-            <div class="resume-column-left">
-              <h2>Высшее образование</h2>
+          <div class="resume-heading container">
+            <div class="resume-heading-left">
+              <h2>Резюме</h2>
+              <span>Образование и опыт работы</span>
             </div>
+            <div class="resume-download">
+              <a class="resume-download-link" href="#">Скачать в PDF</a>
+            </div>
+          </div>
 
-            <div class="resume-column-left">
+          <div class="resume-container container">
+
+            <div class="resume-container-left">
+              <h2>Высшее образование</h2>
               <h2>Опыт работы</h2>
             </div>
 
-            <div class="resume-column-right">
+            <div class="resume-container-right">
+            
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">MA in Linguistics</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-study">Universitaet Bayreuth</span>
+                  <span class="resume-date">2011 - 2012</span>
+                </div>
+              </div>
 
-              <h3 class="resume-item">MA in Linguistics</h3>
-              <h3 class="resume-study">Universitaet Bayreuth</h3>
-              <h3 class="resume-date">2011 - 2012</h3>
-              <hr>
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">Магистр филологии</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-study">МГПУ</span>
+                  <span class="resume-date">2010 - 2012</span>
+                </div>
+              </div>
 
-              <h3 class="resume-item">Магистр филологии</h3>
-              <h3 class="resume-study">МГПУ</h3>
-              <h3 class="resume-date">2010 - 2012</h3>
-              <hr>
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">Бакалавр лингвистики</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-study">МГПУ</span>
+                  <span class="resume-date">2006 - 2010</span>
+                </div>
+              </div>
 
-              <h3 class="resume-item">Бакалавр лингвистики</h3>
-              <h3 class="resume-study">МГПУ</h3>
-              <h3 class="resume-date">2006 - 2010</h3>
-              <hr>
-            </div>
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">Заместитель руководителя проекта по общим вопросам</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-work">ООО «Картеш»</span>
+                  <span class="resume-date">2015 - настоящее время</span>
+                </div>
+              </div>
+              
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">Специалист отдела студенческих инициатив</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-work">МГПУ</span>
+                  <span class="resume-date">2013 - 2015</span>
+                </div>
+              </div>
 
-            <div class="resume-column-right">
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">Ассистент кафедры западноевропейских языков и переводоведения</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-work">МГПУ</span>
+                  <span class="resume-date">2012 - 2013</span>
+                </div>
+              </div>
 
-              <h3 class="resume-item">Заместитель руководителя проекта по общим вопросам</h3>
-              <h3 class="resume-work">ООО «Картеш»</h3>
-              <h3 class="resume-date">2015 - настоящее время</h3>
-              <hr>
-
-              <h3 class="resume-item">Специалист отдела студенческих инициатив </h3>
-              <h3 class="resume-work">МГПУ</h3>
-              <h3 class="resume-date">2013 - 2015</h3>
-              <hr>
-
-              <h3 class="resume-item">Ассистент кафедры западноевропейских языков и переводоведения</h3>
-              <h3 class="resume-work">МГПУ</h3>
-              <h3 class="resume-date">2012 - 2013</h3>
-              <hr>
-
-              <h3 class="resume-item">Учитель английского языка</h3>
-              <h3 class="resume-work">ГБОУ СОШ № 723</h3>
-              <h3 class="resume-date">2010 - 2011</h3>
-              <hr>
+              <div class="resume-unit">
+                <div class="resume-unit-left">
+                  <span class="resume-item">Учитель английского языка</span>
+                </div>
+                <div class="resume-unit-right">
+                  <span class="resume-work">ГБОУ СОШ № 723</span>
+                  <span class="resume-date">2010 - 2011</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="video">
-        
-          <div class="container">
+        <section class="video container">
             <h2>Небольшое видео обо мне</h2>
-            <video src="#" controls="controls" poster="#"></video>
-          </div>
+            <video src="#" controls="controls" poster="#" width="480" height="320"></video>
         </section>
 
         <section class="reasons">
 
-          <div class="container">
+          <div class="reasons-container container">
 
             <div class="reasons-why">
               <h2>Почему я?</h2>
-              <ul>
+              <ul class="reasons-why-list">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -177,7 +253,7 @@
 
             <div class="reasons-what">
             <h2>Что я ищу?</h2>
-              <ul>
+              <ul class="reasons-what-list">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -188,20 +264,36 @@
         </section>
 
         <section class="portfolio">
+          
+          <div class="container">
+            <h2>Портфолио</h2>
+            <div class="portfolio-container">
+
             
-        <div class="container">
+              <div class="portfolio-item">
+                <a class="portfolio-item-link" href="#">
+                  <img src="#" alt="" width="300" height="250">
+                </a>
+              </div>
+              
+              <div class="portfolio-item">
+                <a class="portfolio-item-link" href="#">
+                  <img src="#" alt="" width="300" height="250">
+                </a>
+              </div>
+              
+              <div class="portfolio-item">
+                <a class="portfolio-item-link" href="#">
+                  <img src="#" alt="" width="300" height="250">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-          <h2>Портфолио</h2>
-          <p class="portfolio-item"><a href="#"><img src="#" alt=""></a></p>
-          <p class="portfolio-item"><a href="#"><img src="#" alt=""></a></p>  
-          <p class="portfolio-item"><a href="#"><img src="#" alt=""></a></p>
-
-        </div>
-      </section>
-    </main>
-
-    <footer>
-        
+      <footer>
+          
         <div class="container">
         
           <div class="footer-item">
@@ -232,7 +324,7 @@
           <span>© Иван Савитский 2017</span>
         </div>
       </div>
-    </footer>
+      </footer>
   </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
