@@ -642,3 +642,161 @@ img {
   width: 350px;
   height: 300px;
 }
+
+.main-footer {
+  background-color: #46454d;
+  color: #c8b374;
+}
+
+.main-footer h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.main-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  padding-top: 20px;
+}
+
+.footer-item-list li {
+  position: relative;
+  padding: 20px 0 20px 60px;
+}
+
+.footer-item-list a {
+  color: #c8b374;
+  text-decoration: none;
+}
+
+.footer-item-list a:hover {
+  color: #864c24;
+  text-decoration: none;
+}
+
+.footer-item-list li:first-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  width: 32px;
+  height: 26px;
+  background-position: -425px -5px;
+  top: 20px;
+  left: 0;
+}
+
+.footer-item-list li:last-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  width: 30px;
+  height: 30px;
+  background-position: -751px -5px;
+  top: 20px;
+  left: 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-media li {
+  padding-top: 85px;
+  margin-right: 50px;
+}
+
+.social-media a {
+  position: relative;
+  color: #c8b374;
+  text-decoration: none;
+}
+
+.social-media a::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+}
+
+.gh::before {  
+  width: 32px;
+  height: 32px;
+  background-position: -551px -5px;
+  top: -50px;
+  left: 5px;
+}
+
+.gh:hover::before {  
+  background-position: -593px -5px;
+}
+
+.fb::before {
+  width: 32px;
+  height: 32px;
+  background-position: -509px -5px;
+  top: -50px;
+  left: 15px;
+}
+
+.fb:hover::before {  
+  background-position: -467px -5px;
+}
+
+.vk::before {
+  width: 32px;
+  height: 32px;
+  background-position: -875px -5px;
+  top: -50px;
+  left: -5px;
+}
+
+.vk:hover::before {
+  background-position: -917px -5px;
+}
+
+.tw::before {
+  width: 32px;
+  height: 26px;
+  background-position: -791px -5px;
+  top: -45px;
+  left: 10px;
+}
+
+.tw:hover::before {
+  background-position: -833px -5px;
+}
+
+.social-media a:hover {
+  color: #864c24;
+  text-decoration: none;
+}
+
+.footer-item:last-child {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.footer-logo {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 15px;
+}
+
+.footer-face {
+  position: absolute;
+  z-index: 0;
+  top: 30px;
+  left: -25px;
+}
