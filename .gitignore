@@ -46,3 +46,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 mockup.png
+
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+css/*.css
+node_modules/
+Thumbs.db
