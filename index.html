@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иван Савитский</title>
   <link rel="shortcut icon" href="img/boroda-01.png" type="image/png">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,30 +14,30 @@
       <header class="page-header">
 
 
-          <div class="logo-combined">
-            <div class="face">
+          <div class="logo">
+            <div class="logo__face">
               <img src="img/boroda-01.png" alt="Bearded face" height="50" width="50">
             </div>
-            <div class="logo">
+            <div class="logo__title">
               <img src="img/logo-vav-01.png" alt="Логотип" height="70" width="215">
             </div>
           </div>
 
 
-          <nav class="navbar">
-            <ul class="nav-items">
-              <li class="nav-item"><a href=#>Приветствие</a></li>
-              <li class="nav-item"><a href=#>Обо мне</a></li>
-              <li class="nav-item"><a href=#>Резюме</a></li>
-              <li class="nav-item"><a href=#>Портфолио</a></li>
-              <li class="nav-item"><a href=#>Контакты</a></li>
+          <nav class="main-nav">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a href=#>Приветствие</a></li>
+              <li class="main-nav__item"><a href=#>Обо мне</a></li>
+              <li class="main-nav__item"><a href=#>Резюме</a></li>
+              <li class="main-nav__item"><a href=#>Портфолио</a></li>
+              <li class="main-nav__item"><a href=#>Контакты</a></li>
             </ul>
           </nav>
 
           <nav class="language-switcher">
             <ul>
-              <li class="lang-ru"><a class="lang-ru-link" rel="alternate" href="#" hreflang="ru" lang="ru">RU</a></li>
-              <li class="lang-en"><a class="lang-en-link" rel="alternate" href="#" hreflang="en" lang="en">EN</a></li>
+              <li class="language-switcher__lang language-switcher__lang--ru"><a class="language-switcher__lang-link language-switcher__lang-link--ru" rel="alternate" href="#" hreflang="ru" lang="ru">RU</a></li>
+              <li class="language-switcher__lang language-switcher__lang--en"><a class="language-switcher__lang-link language-switcher__lang-link--en" rel="alternate" href="#" hreflang="en" lang="en">EN</a></li>
             </ul>
           </nav>
 
@@ -48,31 +47,31 @@
     <main class="main">
 
       <section class="background-img">
-        <div class="greetings">
+        <div class="background-img__caption">
           <h1>Иван Савитский | Верстальщик | Junior Frontend-разработчик</h1>
         </div>
       </section>
 
       <section class="welcome">
-        <div class="welcome-container container">
+        <div class="welcome__container">
           <h2>Добро пожаловать!</h2>
-          <button class="welcome-btn" type="button"></button>
+          <button class="welcome__btn" type="button"></button>
         </div>
-        <div class="welcome-toggle">
-          <p class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="welcome__toggle">
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
       </section>
 
-      <section class="contacts">
-        <ul class="contact-details container">
-          <li class="contact-item">mail@example.com</li>
-          <li class="contact-item">+7-903-777-77-77</li>
-          <li class="contact-item">г. Москва</li>
+      <section class="contact">
+        <ul class="contact__details">
+          <li class="contact__item">mail@example.com</li>
+          <li class="contact__item">+7-903-777-77-77</li>
+          <li class="contact__item">г. Москва</li>
         </ul>
       </section>
 
-      <section class="profile container">
+      <section class="profile">
 
         <div class="skills">
 
@@ -83,50 +82,50 @@
           <div class="skillset">
             <h2>Навыки</h2>
 
-            <div class="skillbar-container">
+            <div class="skillset__wrapper">
               <span>HTML</span>
-              <div class="skillbar">
-                <div class="skill html"><span>Уверенно владею</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--html"><span>Уверенно владею</span></div>
               </div>
 
               <span>CSS</span>
-              <div class="skillbar">
-                <div class="skill css"><span>Уверенно владею</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--css"><span>Уверенно владею</span></div>
               </div>
 
               <span>JavaScript</span>
-              <div class="skillbar">
-                <div class="skill js"><span>Могу написать простой код</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--js"><span>Могу написать простой код</span></div>
               </div>
 
               <span>Git</span>
-              <div class="skillbar">
-                <div class="skill git"><span>Есть небольшой опыт</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--git"><span>Есть небольшой опыт</span></div>
               </div>
 
               <span>Photoshop</span>
-              <div class="skillbar">
-                <div class="skill ps"><span>Необходимый минимум для верстки</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--ps"><span>Необходимый минимум для верстки</span></div>
               </div>
 
               <span>Less/SASS</span>
-              <div class="skillbar">
-                <div class="skill pre"><span>Знаком с принципами работы</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--pre"><span>Знаком с принципами работы</span></div>
               </div>
 
               <span>JQuery</span>
-              <div class="skillbar">
-                <div class="skill jq"><span>Знаком с принципами работы</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--jq"><span>Знаком с принципами работы</span></div>
               </div>
 
               <span>Bootstrap</span>
-              <div class="skillbar">
-                <div class="skill bs"><span>Есть минимальный опыт</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--bs"><span>Есть минимальный опыт</span></div>
               </div>
 
               <span>Angular 1.x/React</span>
-              <div class="skillbar">
-                <div class="skill angr"><span>Знаком с принципами работы</span></div>
+              <div class="skillset__bar">
+                <div class="skill skill--angr"><span>Знаком с принципами работы</span></div>
               </div>
 
             </div>
@@ -141,110 +140,110 @@
 
         <section class="resume">
 
-          <div class="resume-heading container">
-            <div class="resume-heading-left">
+          <div class="resume__heading">
+            <div class="resume__heading resume__heading--left">
               <h2>Резюме</h2>
               <span>Образование и опыт работы</span>
             </div>
-            <div class="resume-download">
-              <a class="resume-download-link" href="#">Скачать в PDF</a>
+            <div class="resume__download">
+              <a class="resume__download-link" href="#">Скачать в PDF</a>
             </div>
           </div>
 
-          <div class="resume-container container">
+          <div class="resume__wrapper">
 
-            <div class="resume-container-left">
+            <div class="resume__wrapper resume__wrapper--left">
               <h2>Высшее образование</h2>
               <h2>Опыт работы</h2>
             </div>
 
-            <div class="resume-container-right">
+            <div class="resume__wrapper resume__wrapper--right">
 
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">MA in Linguistics</span>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">MA in Linguistics</span>
                 </div>
-                <div class="resume-unit-right">
-                  <span class="resume-study">Universitaet Bayreuth</span>
-                  <span class="resume-date">2011 - 2012</span>
+                <div class="resume__unit resume__unit--right">
+                  <span class="resume__study">Universitaet Bayreuth</span>
+                  <span class="resume__date">2011 - 2012</span>
                 </div>
               </div>
 
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">Магистр филологии</span>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Магистр филологии</span>
                 </div>
-                <div class="resume-unit-right">
-                  <span class="resume-study">МГПУ</span>
-                  <span class="resume-date">2010 - 2012</span>
-                </div>
-              </div>
-
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">Бакалавр лингвистики</span>
-                </div>
-                <div class="resume-unit-right">
-                  <span class="resume-study">МГПУ</span>
-                  <span class="resume-date">2006 - 2010</span>
+                <div class="resume__unit resume__unit--right">
+                  <span class="resume__study">МГПУ</span>
+                  <span class="resume__date">2010 - 2012</span>
                 </div>
               </div>
 
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">Заместитель руководителя проекта по общим вопросам</span>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Бакалавр лингвистики</span>
                 </div>
-                <div class="resume-unit-right">
+                <div class="resume__unit resume__unit--right">
+                  <span class="resume__study">МГПУ</span>
+                  <span class="resume__date">2006 - 2010</span>
+                </div>
+              </div>
+
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Заместитель руководителя проекта по общим вопросам</span>
+                </div>
+                <div class="resume__unit resume__unit--right">
                   <span class="resume-work">ООО «Картеш»</span>
-                  <span class="resume-date">2015 - настоящее время</span>
+                  <span class="resume__date">2015 - настоящее время</span>
                 </div>
               </div>
 
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">Специалист отдела студенческих инициатив</span>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Специалист отдела студенческих инициатив</span>
                 </div>
-                <div class="resume-unit-right">
+                <div class="resume__unit resume__unit--right">
                   <span class="resume-work">МГПУ</span>
-                  <span class="resume-date">2013 - 2015</span>
+                  <span class="resume__date">2013 - 2015</span>
                 </div>
               </div>
 
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">Ассистент кафедры западноевропейских языков и переводоведения</span>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Ассистент кафедры западноевропейских языков и переводоведения</span>
                 </div>
-                <div class="resume-unit-right">
+                <div class="resume__unit resume__unit--right">
                   <span class="resume-work">МГПУ</span>
-                  <span class="resume-date">2012 - 2013</span>
+                  <span class="resume__date">2012 - 2013</span>
                 </div>
               </div>
 
-              <div class="resume-unit">
-                <div class="resume-unit-left">
-                  <span class="resume-item">Учитель английского языка</span>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Учитель английского языка</span>
                 </div>
-                <div class="resume-unit-right">
+                <div class="resume__unit resume__unit--right">
                   <span class="resume-work">ГБОУ СОШ № 723</span>
-                  <span class="resume-date">2010 - 2011</span>
+                  <span class="resume__date">2010 - 2011</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="video container">
+        <section class="video">
             <h2>Небольшое видео обо мне</h2>
             <video src="#" controls="controls" poster="#" width="480" height="320"></video>
         </section>
 
-        <section class="reasons">
+        <section class="features">
 
-          <div class="reasons-container container">
+          <div class="features__wrapper">
 
-            <div class="reasons-why">
+            <div class="features__why">
               <h2>Почему я?</h2>
-              <ul class="reasons-why-list">
+              <ul class="features__why-list">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -252,9 +251,9 @@
               </ul>
             </div>
 
-            <div class="reasons-what">
+            <div class="features__what">
             <h2>Что я ищу?</h2>
-              <ul class="reasons-what-list">
+              <ul class="features__what-list">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -266,61 +265,61 @@
 
         <section class="portfolio">
 
-          <div class="container">
+
             <h2>Портфолио</h2>
-            <div class="portfolio-container">
+            <div class="portfolio__wrapper">
 
 
-              <div class="portfolio-item">
-                <a class="portfolio-item-link" href="#">
+              <div class="portfolio__item">
+                <a class="portfolio__item-link" href="#">
                   <img src="#" alt="" width="300" height="250">
                 </a>
               </div>
 
-              <div class="portfolio-item">
-                <a class="portfolio-item-link" href="#">
+              <div class="portfolio__item">
+                <a class="portfolio__item-link" href="#">
                   <img src="#" alt="" width="300" height="250">
                 </a>
               </div>
 
-              <div class="portfolio-item">
-                <a class="portfolio-item-link" href="#">
+              <div class="portfolio__item">
+                <a class="portfolio__item-link" href="#">
                   <img src="#" alt="" width="300" height="250">
                 </a>
               </div>
             </div>
-          </div>
+
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="page-footer">
 
-        <div class="footer-container container">
+        <div class="page-footer__wrapper">
 
-          <div class="footer-item">
+          <div class="page-footer__item">
             <h2>Контакты</h2>
-            <ul class="footer-item-list">
+            <ul class="page-footer__item-list">
               <li><a href="mailto:mail@example.com">mail@example.com</a></li>
               <li><a href="tel:+79037777777">+7-903-777-77-77</a></li>
             </ul>
           </div>
 
-          <div class="footer-item">
+          <div class="page-footer__item">
             <h2>Я в соцсетях</h2>
-            <ul class="social-media">
-              <li><a class="gh" href="#">Github</a></li>
-              <li><a class="fb" href="#">Facebook</a></li>
-              <li><a class="vk" href="#">VK</a></li>
-              <li><a class="tw" href="#">Twitter</a></li>
+            <ul class="page-footer__social">
+              <li><a class="page-footer__social-link page-footer__social-link--gh" href="#">Github</a></li>
+              <li><a class="page-footer__social-link page-footer__social-link--fb" href="#">Facebook</a></li>
+              <li><a class="page-footer__social-link page-footer__social-link--vk" href="#">VK</a></li>
+              <li><a class="page-footer__social-link page-footer__social-link--tw" href="#">Twitter</a></li>
             </ul>
           </div>
 
-          <div class="footer-item">
+          <div class="page-footer__item">
 
-            <div class="footer-logo">
+            <div class="page-footer__logo">
               <img src="img/logo-vav-01.png" alt="Логотип" height="70" width="215">
             </div>
-            <div class="footer-face">
+            <div class="page-footer__face">
               <img src="img/boroda-01.png" alt="Bearded face" height="50" width="50">
             </div>
           <span>© Иван Савитский 2017</span>
