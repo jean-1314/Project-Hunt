@@ -7,7 +7,14 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "editorconfig": "^0.13.2",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
