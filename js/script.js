@@ -1,10 +1,10 @@
-var enBlock = document.querySelector(".lang-en-link");
+var enBlock = document.querySelector(".language-switcher__lang-link--en");
 
-var ruBlock = document.querySelector(".lang-ru-link");
+var ruBlock = document.querySelector(".language-switcher__lang-link--ru");
 
-var welcome = document.querySelector(".welcome-toggle");
+var welcome = document.querySelector(".welcome__toggle");
 
-var welcomeBtn = document.querySelector(".welcome-btn");
+var welcomeBtn = document.querySelector(".welcome__btn");
 
 enBlock.addEventListener("mouseenter", function(event) {
   event.preventDefault();
@@ -28,6 +28,6 @@ ruBlock.addEventListener("mouseleave", function(event) {
 
 welcomeBtn.addEventListener("click", function(event) {
   event.preventDefault();
-  welcome.classList.toggle("welcome-toggle-on");
-  welcomeBtn.classList.toggle("welcome-btn-up");
+  welcome.classList.toggle("welcome__toggle--on");
+  welcomeBtn.classList.toggle("welcome__btn--up");
 });

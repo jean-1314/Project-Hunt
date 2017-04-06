@@ -1,0 +1,52 @@
+.skill {
+  border-radius: 10px;
+  height: inherit;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.skill--html {
+  width: 85%;
+  border-radius: 10px;  
+  background: linear-gradient(to right, #46454d, #864c24);
+}
+
+.skill--css {
+  width: 75%;
+  background: linear-gradient(to right, #864c24, #c8b374);
+}
+
+.skill--js {
+  width: 20%;
+  background: linear-gradient(to right, #c8b374, #8b6f48);
+}
+
+.skill--git {
+  width: 30%;
+  background: linear-gradient(to right, #8b6f48, #ce5b78);
+}
+
+.skill--ps {
+  width: 25%;
+  background: linear-gradient(to right, #ce5b78, #b86ba3);
+}
+
+.skill--pre {
+  width: 10%;
+  background: linear-gradient(to right,#b86ba3, #525a88);
+}
+
+.skill--jq {
+  width: 15%;
+  background: linear-gradient(to right,#525a88, #86af49);
+}
+
+.skill--bs {
+  width: 20%;
+  background: linear-gradient(to right,#86af49, #46454d);
+}
+
+.skill--angr {
+  width: 10%;
+  background: linear-gradient(to right,#46454d, #864c24);
+}

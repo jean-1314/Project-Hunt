@@ -1,0 +1,39 @@
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 730px;
+  margin-left: 50px;
+}
+
+.main-nav__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.main-nav__item a {
+  color: #c8b374;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #864c24;
+    text-shadow: -1px 1px 1px #000000;
+  }
+
+  &:active {
+    color: #864c24;
+    text-shadow: 1px -1px 1px #000000;
+  }
+}
+
+
+

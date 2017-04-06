@@ -1,0 +1,170 @@
+.resume {
+  background-color: rgba(200, 179, 116, 0.4);
+}
+
+.resume h2 {
+  margin: 0;
+}
+
+.resume__heading {
+  display: flex;
+  justify-content: flex-start;
+  @include container();
+  margin-bottom: 20px;
+}
+
+.resume__heading--left {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.resume__heading--left h2 {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.resume__heading--left span {
+  color: #616161;
+}
+
+.resume__download {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.resume__download-link {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/sprite.png");
+    width: 32px;
+    height: 32px;
+    background-position: -299px -5px;
+    top: -30px;
+    left: 30px;
+  }
+
+  &:hover {
+    color: #864c24;
+  }
+}
+.resume__download-link:hover::before {
+  width: 32px;
+  height: 26px;
+  background-position: -341px -5px;
+  top: -26px;
+  left: 30px;
+}
+
+.resume__wrapper  {
+  display: flex;
+  justify-content: flex-start;
+  @include container();
+  padding-top: 20px;
+}
+
+.resume__wrapper--left {
+  width: 33%;
+}
+
+.resume__wrapper--left h2:first-child {
+  position: relative;
+  top: 2%;
+}
+
+.resume__wrapper--left h2:last-child {
+  position: relative;
+  top: 42%;
+}
+
+.resume__wrapper--right {
+  width: 66%;
+}
+
+.resume__unit {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:nth-child(3) {
+    border-bottom: 2px solid #000000;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.resume__unit--left {
+  display: flex;
+  align-self: flex-start;
+  width: 49%;
+  text-align: left;
+}
+
+.resume__unit--right {
+  padding-left: 140px;
+}
+
+.resume__study,
+.resume__date,
+.resume__work {
+  display: block;
+}
+
+.resume__study {
+  position: relative;
+  padding-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite.png");
+    width: 36px;
+    height: 28px;
+    background-position: -635px -5px;
+    left: -50px;
+  }
+}
+
+.resume__work {
+  position: relative;
+  padding-bottom: 20px;
+
+    &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite.png");
+    width: 32px;
+    height: 32px;
+    background-position: -959px -5px;
+    top: -5px;
+    left: -50px;
+  }
+}
+
+.resume__date{
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite.png");
+    width: 32px;
+    height: 32px;
+    background-position: -5px -5px;
+    top: -5px;
+    left: -49px;
+  }
+}
+
