@@ -5,62 +5,18 @@
 .welcome__container {
   @include container();
   position: relative;
-  min-height: 80px;
-  text-align: center;
 }
 
 .welcome__container h2 {
   display: block;
-  margin: 0 auto;
-  padding-top: 20px;
   font-size: 30px;
   font-weight: bold;
   color: $brown;
 }
 
-.welcome__btn{
-  position: absolute;
-  content: "";
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-image: url("../img/sprite.png");
-  background-color: transparent;
-  border: none;
-  outline: none;
-  width: 32px;
-  height: 32px;
-  background-position: -47px -5px;
-  left: 65%;
-  top: 20px;
-
-  &:hover {
-    width: 32px;
-    height: 32px;
-    background-position: -131px -5px;
-    cursor: pointer;
-  }
-
-  &:focus {
-    background-position: -89px -5px;
-  }
-}
-
-.welcome__btn--up {
-  background-position: -173px -5px;
-
-  &:hover {
-    background-position: -257px -5px;
-  }
-
-  &:focus {
-    background-position: -215px -5px;
-  }
-}
-
 .welcome__toggle {
-  display: none;
+  display: block;
   justify-content: center;
-  padding: 20px 27px;
   background-color: $bg-sand;
 }
 
@@ -70,6 +26,4 @@
 
 .welcome__toggle p {
   @include container();
-  max-width: 1200px;
-  margin: 0;
 }

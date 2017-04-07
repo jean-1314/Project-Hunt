@@ -1,10 +1,4 @@
 .portfolio__wrapper {
-  display: flex;
-  justify-content: space-around;
   @include container();
 }
 
-.portfolio__item {
-  width: 350px;
-  height: 300px;
-}

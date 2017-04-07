@@ -1,7 +1,4 @@
 .contact {
-  display: flex;
-  justify-content: center;
-  min-height: 100px;
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
@@ -10,46 +7,6 @@
 }
 
 .contact__details {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
   @include container();
-  margin: 0;
-  padding: 0;
   list-style: none;
-}
-
-.contact__item {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  padding-top: 60px;
-  margin-bottom: 20px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    top: 20px;
-    left: 40%;
-  }
-
-  &:first-child::before {
-    width: 32px;
-    height: 26px;
-    background-position: -383px -5px;
-  }
-
-  &:nth-child(2)::before {
-    width: 30px;
-    height: 30px;
-    background-position: -711px -5px;
-  }
-
-  &:last-child::before {
-    width: 20px;
-    height: 32px;
-    background-position: -681px -5px;
-  }
 }

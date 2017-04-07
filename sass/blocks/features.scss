@@ -3,26 +3,20 @@
 }
 
 .features__wrapper {
-  display: flex;
-  justify-content: flex-start;
   @include container();
 }
 
 .features__why,
 .features__what {
-  width: 50%;
 }
 
 .features__what {
-  margin-left: 100px;
 }
 
 .features__why-list,
 .features__what-list {
-  padding-left: 20px;
 }
 
 .features__why-list li,
 .features__what-list li {
-  padding: 10px 0;
 }

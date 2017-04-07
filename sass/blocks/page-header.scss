@@ -1,7 +1,8 @@
 .page-header {
-  display: flex;
-  justify-content: flex-start;
+
   background-color: $darkblue;
-  width: 100%;
-  min-height: 7vh;
+}
+
+.page-header__wrapper {
+  @include container;
 }

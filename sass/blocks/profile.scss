@@ -1,10 +1,5 @@
 .profile {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   @include container();
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .profile h2 {

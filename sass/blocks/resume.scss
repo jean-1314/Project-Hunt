@@ -1,3 +1,7 @@
 .resume {
   background-color: $bg-sand;
 }
+
+.resume__wrapper {
+  @include container();
+}

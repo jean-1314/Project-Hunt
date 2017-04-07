@@ -1,13 +1,3 @@
 .video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   @include container();
-  margin-bottom: 20px;
-}
-
-.video h2 {
-  margin: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
