@@ -1,6 +1,6 @@
 .page-footer {
-  background-color: #46454d;
-  color: #c8b374;
+  background-color: $darkblue;
+  color: $sand;
 }
 
 .page-footer h2 {
@@ -38,11 +38,11 @@
 }
 
 .page-footer__item-list a {
-  color: #c8b374;
+  color: $sand;
   text-decoration: none;
 
     &:hover {
-    color: #864c24;
+    color: $brown;
     text-decoration: none;
   }
 }
@@ -81,7 +81,7 @@
 
 .page-footer__social a {
   position: relative;
-  color: #c8b374;
+  color: $sand;
   text-decoration: none;
 
   &::before {
@@ -140,7 +140,7 @@
 }
 
 .page-footer__social a:hover {
-  color: #864c24;
+  color: $brown;
   text-decoration: none;
 }
 

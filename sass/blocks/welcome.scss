@@ -1,5 +1,5 @@
 .welcome {
-  background-color: rgba(200, 179, 116, 0.4);
+  background-color: $bg-sand;
 }
 
 .welcome__container {
@@ -15,7 +15,7 @@
   padding-top: 20px;
   font-size: 30px;
   font-weight: bold;
-  color: #864c24;
+  color: $brown;
 }
 
 .welcome__btn{
@@ -61,7 +61,7 @@
   display: none;
   justify-content: center;
   padding: 20px 27px;
-  background-color: rgba(202, 189, 42, 0.3);
+  background-color: $bg-sand;
 }
 
 .welcome__toggle--on {
