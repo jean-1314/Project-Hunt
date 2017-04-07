@@ -1,14 +1,18 @@
 .logo {
-
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
 .logo__title {
   position: relative;
-  padding-left: 50px;
   z-index: 1;
 }
 
 .logo__face {
   position: absolute;
   z-index: 0;
+  top: 35px;
+  left: 25px;
 }

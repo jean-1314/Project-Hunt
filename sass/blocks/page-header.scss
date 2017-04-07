@@ -5,4 +5,5 @@
 
 .page-header__wrapper {
   @include container;
+  position: relative;
 }
