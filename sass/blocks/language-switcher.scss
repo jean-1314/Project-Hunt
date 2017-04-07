@@ -1,57 +1,58 @@
 .language-switcher {
-  display: inline-block;
   position: absolute;
-  width: 50px;
-  max-width: 50px;
-  min-width: 30px;
+  width: 100px;
   font-weight: bold;
   text-align: center;
-  top: 59px;
-  right: 2%;
+  top: 135px;
+  left: 52px;
 }
 
 .language-switcher ul {
+  display: flex;
   list-style: none;
+  width: 120px;
   margin: 0;
   padding: 0;
 }
 
-.language-switcher__lang-link--ru {
-  display: block;
+.language-switcher__lang-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
   text-decoration: none;
+
+  &:active {
+    box-shadow: inset 0 1px 0 #333333;
+  }
+}
+
+.language-switcher__lang-link--ru {
+
   color: $blue;
   background-color: $green;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   border: 3px solid $brown;
-  border-bottom: none;
+  border-right: none;
 
   &:hover {
     background-color: $blue;
     color: $white;
   }
-
-  &:active {
-    box-shadow: inset 0 1px 0 $black;
-  }
 }
 
 .language-switcher__lang-link--en {
-  display: block;
   background-color: $blue;
-  border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   border: 3px solid $brown;
-  border-top: none;
-  text-decoration: none;
+  border-left: none;
   color: $sand;
 
   &:hover {
     background-color: $green;
     color: $white;
-  }
-
-  &:active {
-    box-shadow: inset 0 -1px 1px $black;
   }
 }
