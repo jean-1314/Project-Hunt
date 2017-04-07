@@ -389,12 +389,21 @@ img {
   margin: 0; }
 
 .background-img {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  min-height: 400px;
   background-color: #000000;
   background-repeat: no-repeat; }
 
 .background-img__wrapper {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: inherit;
+  padding-bottom: 30px; }
   @media (min-width: 768px) {
     .background-img__wrapper {
       width: 768px; } }
@@ -405,7 +414,8 @@ img {
 .background-img__caption h1 {
   margin: 0;
   color: #ffffff;
-  font-size: 28px; }
+  font-size: 28px;
+  text-align: center; }
 
 .contact {
   font-size: 18px;
