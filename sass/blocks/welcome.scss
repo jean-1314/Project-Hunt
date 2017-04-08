@@ -2,29 +2,28 @@
   background-color: $bg-sand;
 }
 
-.welcome__container {
+.welcome__wrapper {
   @include container();
   position: relative;
 }
 
-.welcome__container h2 {
+.welcome__wrapper h2 {
   display: block;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 30px;
   font-weight: bold;
   color: $brown;
+  text-align: center;
 }
 
-.welcome__toggle {
+.welcome__info {
   display: block;
   justify-content: center;
-  background-color: $bg-sand;
+  padding-bottom: 20px;
 }
 
-.welcome__toggle--on {
-  display: flex;
-}
-
-.welcome__toggle p {
+.welcome__info p {
   @include container();
 }

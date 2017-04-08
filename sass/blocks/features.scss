@@ -4,6 +4,8 @@
 
 .features__wrapper {
   @include container();
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .features__why,
@@ -11,14 +13,20 @@
 
 }
 
-.features__what {
+.features__why h2,
+.features__what h2 {
+  margin: 0;
+  text-align: center;
 }
 
 .features__why-list,
 .features__what-list {
   margin: 0;
+  padding-left: 20px;
 }
 
 .features__why-list li,
 .features__what-list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

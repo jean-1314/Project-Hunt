@@ -16,3 +16,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@keyframes stretching {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

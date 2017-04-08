@@ -4,4 +4,86 @@
 
 .resume__wrapper {
   @include container();
+  padding-top: 10px;
+}
+
+.resume__heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume__heading--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resume__heading--left h2 {
+  margin: 0;
+}
+
+.resume__heading--left span {
+  display: block;
+  color: #616161;
+}
+
+.resume__download {
+  display: flex;
+  justify-content: flex-end;
+  align-self: baseline;
+  padding-top: 35px;
+}
+
+.resume__download-link {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+}
+
+.resume__download-icon {
+  position: absolute;
+  top: -35px;
+  right: 30px;
+}
+
+.resume__download-link:hover {
+  color: $brown;
+  fill: $brown;
+}
+
+.resume__unit {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $black;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.resume__unit--left {
+  width: 49%;
+  border-bottom: none;
+}
+
+.resume__unit--right {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+  padding-left: 9%;
+  border-bottom: none;
+}
+
+.resume__study,
+.resume__date,
+.resume__work {
+  display: block;
+}
+
+.resume__unit-icon {
+  @include visually-hidden;
 }

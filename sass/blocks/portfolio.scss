@@ -1,8 +1,16 @@
 .portfolio__wrapper {
   @include container();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .portfolio__wrapper h2 {
   margin: 0;
+  padding-top: 20px;
+  text-align: center;
 }
 
+.portfolio__item {
+  height: 250px;
+}

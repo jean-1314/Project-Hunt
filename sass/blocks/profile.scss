@@ -1,7 +1,7 @@
-.profile {
-  @include container();
-}
-
 .profile h2 {
   text-transform: uppercase;
+}
+
+.profile__wrapper {
+  @include container();
 }

@@ -1,4 +1,26 @@
 .skill {
+  padding-left: 5%;
   white-space: nowrap;
   overflow: visible;
+  border-radius: 10px;
+  background: linear-gradient(to right, #864c24, #c8b374);
+  animation-name: stretching;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.skill--html {
+  width: 75%;
+}
+
+.skill--js {
+  width: 10%;
+}
+
+.skill--git {
+  width: 50%;
+}
+
+.skill--ps {
+  width: 35%;
 }

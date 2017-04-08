@@ -57,9 +57,9 @@
       </section>
 
       <section class="welcome">
-        <div class="welcome__container">
+        <div class="welcome__wrapper">
           <h2>Добро пожаловать!</h2>
-          <div class="welcome__toggle">
+          <div class="welcome__info">
             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -68,76 +68,75 @@
 
       <section class="contact">
         <ul class="contact__details">
-          <li class="contact__item">mail@example.com</li>
-          <li class="contact__item">+7-903-777-77-77</li>
+
+          <li class="contact__item"><a href="mailto:mail@example.com">mail@example.com</a></li>
+          <svg class="contact__item-icon contact__item-icon--mail" width="41" height="35">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#envelop"></use>
+          </svg>
+
+          <li class="contact__item"><a href="tel:+79037777777">+7-903-777-77-77</a></li>
+          <svg class="contact__item-icon contact__item-icon--phone" width="41" height="35">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#phone"></use>
+          </svg>
+
           <li class="contact__item">г. Москва</li>
+          <svg class="contact__item-icon contact__item-icon--location" width="41" height="35">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#location"></use>
+          </svg>
+
         </ul>
       </section>
 
       <section class="profile">
 
-        <div class="skills">
+        <div class="profile__wrapper">
 
           <figure class="avatar">
             <img src="http://placehold.it/300x365" alt="profile photo" width-"300" height="365">
           </figure>
 
+          <div class="about-me">
+            <h2>Обо мне</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
           <div class="skillset">
             <h2>Навыки</h2>
 
             <div class="skillset__wrapper">
-              <span>HTML</span>
+              <span class="skillset__caption">HTML5 / CSS3</span>
               <div class="skillset__bar">
                 <div class="skill skill--html"><span>Уверенно владею</span></div>
               </div>
 
-              <span>CSS</span>
-              <div class="skillset__bar">
-                <div class="skill skill--css"><span>Уверенно владею</span></div>
-              </div>
-
-              <span>JavaScript</span>
+              <span class="skillset__caption">JavaScript</span>
               <div class="skillset__bar">
                 <div class="skill skill--js"><span>Могу написать простой код</span></div>
               </div>
 
-              <span>Git</span>
+              <span class="skillset__caption">Git</span>
               <div class="skillset__bar">
-                <div class="skill skill--git"><span>Есть небольшой опыт</span></div>
+                <div class="skill skill--git"><span>Есть опыт работы</span></div>
               </div>
 
-              <span>Photoshop</span>
+              <span class="skillset__caption">Photoshop</span>
               <div class="skillset__bar">
-                <div class="skill skill--ps"><span>Необходимый минимум для верстки</span></div>
+                <div class="skill skill--ps"><span>Необходимый минимум для вёрстки</span></div>
               </div>
 
-              <span>Less/SASS</span>
-              <div class="skillset__bar">
-                <div class="skill skill--pre"><span>Знаком с принципами работы</span></div>
-              </div>
-
-              <span>JQuery</span>
-              <div class="skillset__bar">
-                <div class="skill skill--jq"><span>Знаком с принципами работы</span></div>
-              </div>
-
-              <span>Bootstrap</span>
-              <div class="skillset__bar">
-                <div class="skill skill--bs"><span>Есть минимальный опыт</span></div>
-              </div>
-
-              <span>Angular 1.x/React</span>
-              <div class="skillset__bar">
-                <div class="skill skill--angr"><span>Знаком с принципами работы</span></div>
+              <div class="skillset__else">
+                <strong class="skillset__else-caption">А также:</strong>
+                <ul>
+                  <li>БЭМ;</li>
+                  <li>LESS и SASS;</li>
+                  <li>Grunt и Gulp;</li>
+                  <li>адаптивная валидная кроссбраузерная вёрстка;</li>
+                  <li>небольшой опыт с JQuery и Bootstrap.</li>
+                </ul>
               </div>
 
             </div>
           </div>
-        </div>
-
-        <div class="about-me">
-          <h2>Обо мне</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
 
@@ -150,8 +149,14 @@
                 <h2>Резюме</h2>
                 <span>Образование и опыт работы</span>
               </div>
+
               <div class="resume__download">
-                <a class="resume__download-link" href="#">Скачать в PDF</a>
+                <a class="resume__download-link" href="#">
+                  <span>Скачать в PDF</span>
+                  <svg class="resume__download-icon" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#download"></use>
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -159,18 +164,22 @@
 
             <div class="resume__wrapper resume__wrapper--left">
               <h2>Высшее образование</h2>
-              <h2>Опыт работы</h2>
-            </div>
-
-            <div class="resume__wrapper resume__wrapper--right">
-
               <div class="resume__unit">
                 <div class="resume__unit resume__unit--left">
                   <span class="resume__item">MA in Linguistics</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
-                  <span class="resume__study">Universitaet Bayreuth</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
+                  </svg>
+                  <span class="resume__study">Universit&#228;t Bayreuth</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2011 - 2012</span>
+
                 </div>
               </div>
 
@@ -179,8 +188,17 @@
                   <span class="resume__item">Магистр филологии</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
+                  </svg>
                   <span class="resume__study">МГПУ</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2010 - 2012</span>
+
                 </div>
               </div>
 
@@ -189,17 +207,38 @@
                   <span class="resume__item">Бакалавр лингвистики</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
+                  </svg>
                   <span class="resume__study">МГПУ</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2006 - 2010</span>
+
                 </div>
               </div>
 
+            </div>
+
+            <div class="resume__wrapper resume__wrapper--right">
+              <h2>Опыт работы</h2>
               <div class="resume__unit">
                 <div class="resume__unit resume__unit--left">
                   <span class="resume__item">Заместитель руководителя проекта по общим вопросам</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
                   <span class="resume__work">ООО «Картеш»</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2015 - настоящее время</span>
                 </div>
               </div>
@@ -209,7 +248,15 @@
                   <span class="resume__item">Специалист отдела студенческих инициатив</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
                   <span class="resume__work">МГПУ</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2013 - 2015</span>
                 </div>
               </div>
@@ -219,7 +266,15 @@
                   <span class="resume__item">Ассистент кафедры западноевропейских языков и переводоведения</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
                   <span class="resume__work">МГПУ</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2012 - 2013</span>
                 </div>
               </div>
@@ -229,7 +284,15 @@
                   <span class="resume__item">Учитель английского языка</span>
                 </div>
                 <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
                   <span class="resume__work">ГБОУ СОШ № 723</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
                   <span class="resume__date">2010 - 2011</span>
                 </div>
               </div>

@@ -7,10 +7,37 @@
 }
 
 .contact__details {
+  position: relative;
   @include container();
+  padding: 0;
   list-style: none;
 }
 
 .contact__item {
+  width: 50%;
   margin: 0;
+  padding-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.contact__item-icon {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  fill: $blue;
+}
+
+.contact__item-icon--phone {
+  top: 70px;
+}
+
+.contact__item-icon--location {
+  top: 130px;
+}
+
+.contact__item a {
+  color: $blue;
+  text-decoration: none;
 }
