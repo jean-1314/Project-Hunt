@@ -4,7 +4,7 @@
 
 .resume__wrapper {
   @include container();
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .resume__heading {
@@ -25,7 +25,7 @@
 
 .resume__heading--left span {
   display: block;
-  color: #616161;
+  color: $black;
 }
 
 .resume__download {
@@ -39,12 +39,13 @@
   position: relative;
   text-decoration: none;
   color: #000000;
+  text-align: center;
 }
 
 .resume__download-icon {
   position: absolute;
   top: -35px;
-  right: 30px;
+  right: 25px;
 }
 
 .resume__download-link:hover {

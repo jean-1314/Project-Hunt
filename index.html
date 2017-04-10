@@ -17,10 +17,16 @@
 
         <div class="logo">
           <div class="logo__face">
-            <img src="img/boroda-01.png" alt="Bearded face" height="50" width="50">
+            <!--<img src="img/boroda-01.png" alt="Bearded face" height="50" width="50">-->
+            <svg class="logo__face-img" width="32" height="53">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#head"></use>
+            </svg>
           </div>
           <div class="logo__title">
-            <img src="img/logo-vav-01.png" alt="Логотип" height="70" width="215">
+            <!--<img src="img/logo-vav-01.png" alt="Логотип" height="70" width="215">-->
+            <svg class="logo__title-img" width="215" height="68">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#logo"></use>
+            </svg>
           </div>
         </div>
 
@@ -31,7 +37,7 @@
           </ul>
         </nav>
 
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
 
           <button class="main-nav__toggle" type="button">Показать меню</button>
 
@@ -121,7 +127,7 @@
 
               <span class="skillset__caption">Photoshop</span>
               <div class="skillset__bar">
-                <div class="skill skill--ps"><span>Необходимый минимум для вёрстки</span></div>
+                <div class="skill skill--ps"><span>Минимум для вёрстки</span></div>
               </div>
 
               <div class="skillset__else">
@@ -162,7 +168,7 @@
 
 
 
-            <div class="resume__wrapper resume__wrapper--left">
+            <div class="resume__container resume__container--left">
               <h2>Высшее образование</h2>
               <div class="resume__unit">
                 <div class="resume__unit resume__unit--left">
@@ -223,7 +229,7 @@
 
             </div>
 
-            <div class="resume__wrapper resume__wrapper--right">
+            <div class="resume__container resume__container--right">
               <h2>Опыт работы</h2>
               <div class="resume__unit">
                 <div class="resume__unit resume__unit--left">
@@ -302,7 +308,7 @@
 
         <section class="video">
             <h2>Небольшое видео обо мне</h2>
-            <video src="#" controls="controls" poster="#" width="320" height="240"></video>
+            <video src="#" controls="controls" poster="#" width="280" height="240"></video>
         </section>
 
         <section class="features">
@@ -333,29 +339,72 @@
 
         <section class="portfolio">
 
-
-
           <div class="portfolio__wrapper">
 
             <h2>Портфолио</h2>
 
-
-            <div class="portfolio__item">
-              <a class="portfolio__item-link" href="#">
-                <img src="#" alt="" width="300" height="250">
+            <div class="portfolio__item portfolio__item--gllacy">
+              <a class="portfolio__item-link portfolio__item-link--gllacy" href="#">
+                <img class="portfolio__item-img portfolio__item-img--gllacy" src="img/gllacy-logo.png" alt="Gllacy logo" width="200" height="250">
               </a>
+              <div class="portfolio__item-description portfolio__item-description--gllacy">
+                <p>
+                  Gllacy Shop – первый «серьёзный» проект, выполненный в рамках базового интенсивного курса по HTML и CSS от HTML Академии.
+                </p>
+                <ul class="portfolio__item-description-list portfolio__item-description-list--gllacy">
+                  <li>Сетка: float;</li>
+                  <li>адаптивность: нет;</li>
+                  <li>фреймворки: нет;</li>
+                  <li>кроссбраузерность: IE10+, Chrome, Firefox, Opera, Safari;</li>
+                  <li>прогрессивное улучшение.</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="portfolio__item">
-              <a class="portfolio__item-link" href="#">
-                <img src="#" alt="" width="300" height="250">
+            <div class="portfolio__item portfolio__item--sedona">
+              <a class="portfolio__item-link portfolio__item-link--sedona" href="#">
+                <svg class="portfolio__item-img portfolio__item-img--sedona" width="200" height="50">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sedona.svg#sedona"></use>
+                </svg>
               </a>
+              <div class="portfolio__item-description portfolio__item-description--sedona">
+                <p>
+                  Sedona – проект, выполненный в рамках продвинутого интенсивного курса по HTML и CSS от HTML Академии.
+                </p>
+                <ul class="portfolio__item-description-list portfolio__item-description-list--sedona">
+                  <li>Сетка: flexbox;</li>
+                  <li>адаптивность сетки: мобильная, планшетная, десктопная версии («фикс»);</li>
+                  <li>адаптивность графики: ретинизация, векторные изображения;</li>
+                  <li>методология: БЭМ;</li>
+                  <li>препроцессор: LESS;</li>
+                  <li>автоматизация: Grunt;</li>
+                  <li>фреймворки: нет;</li>
+                  <li>кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11;</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="portfolio__item">
-              <a class="portfolio__item-link" href="#">
-                <img src="#" alt="" width="300" height="250">
+            <div class="portfolio__item portfolio__item--hunt">
+              <a class="portfolio__item-link portfolio__item-link--hunt" href="#">
+                <svg class="portfolio__item-img portfolio__item-img--hunt" width="215" height="68">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#logo"></use>
+                </svg>
               </a>
+              <div class="portfolio__item-description portfolio__item-description--hunt">
+                <p>
+                  Личный сайт-резюме и плацдарм для испытания frontend-технологий. Дизайнер из меня так себе.
+                </p>
+                <ul class="portfolio__item-description-list portfolio__item-description-list--hunt">
+                  <li>Сетка: flexbox;</li>
+                  <li>адаптивность сетки: мобильная, планшетная, десктопная версии («фикс» с элементами «резины»);</li>
+                  <li>адаптивность графики: ретинизация, векторные изображения;</li>
+                  <li>методология: БЭМ;</li>
+                  <li>препроцессор: SASS;</li>
+                  <li>автоматизация: Gulp;</li>
+                  <li>фреймворки: нет;</li>
+                  <li>кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11;</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -366,31 +415,86 @@
 
         <div class="page-footer__wrapper">
 
-          <div class="page-footer__item">
+          <div class="page-footer__contacts">
             <h2>Контакты</h2>
-            <ul class="page-footer__item-list">
-              <li><a href="mailto:mail@example.com">mail@example.com</a></li>
-              <li><a href="tel:+79037777777">+7-903-777-77-77</a></li>
+            <ul class="page-footer__contacts-list">
+
+              <li>
+                <a class="page-footer__contacts-link page-footer__item-contacts--mail" href="mailto:mail@example.com">
+                  mail@example.com
+                  <svg class="page-footer__contacts-img page-footer__item-img--mail" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#envelop"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="page-footer__contacts-link page-footer__item-contacts--phone" href="tel:+79037777777">
+                  +7-903-777-77-77
+                  <svg class="page-footer__contacts-img page-footer__item-img--phone" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
 
-          <div class="page-footer__item">
+          <div class="page-footer__social">
             <h2>Я в соцсетях</h2>
-            <ul class="page-footer__social">
-              <li><a class="page-footer__social-link page-footer__social-link--gh" href="#">Github</a></li>
-              <li><a class="page-footer__social-link page-footer__social-link--fb" href="#">Facebook</a></li>
-              <li><a class="page-footer__social-link page-footer__social-link--vk" href="#">VK</a></li>
-              <li><a class="page-footer__social-link page-footer__social-link--tw" href="#">Twitter</a></li>
+            <ul class="page-footer__social-list">
+
+              <li>
+                <a class="page-footer__social-link page-footer__social-link--gh" href="#">
+                  Github
+                  <svg class="page-footer__social-img page-footer__social-img--gh" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+                  Facebook
+                  <svg class="page-footer__social-img page-footer__social-img--fb" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="page-footer__social-link page-footer__social-link--vk" href="#">
+                  VK
+                  <svg class="page-footer__social-img page-footer__social-img--vk" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="page-footer__social-link page-footer__social-link--tw" href="#">
+                  Twitter
+                  <svg class="page-footer__social-img page-footer__social-img--tw" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
             </ul>
           </div>
 
-          <div class="page-footer__item">
+          <div class="page-footer__logo">
 
-            <div class="page-footer__logo">
-              <img src="img/logo-vav-01.png" alt="Логотип" height="70" width="215">
+            <div class="page-footer__logo-title">
+              <!--<img src="img/logo-vav-01.png" alt="Логотип" height="70" width="215">-->
+              <svg class="page-footer__logo-title-img" width="215" height="68">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#logo"></use>
+              </svg>
             </div>
             <div class="page-footer__face">
-              <img src="img/boroda-01.png" alt="Bearded face" height="50" width="50">
+              <!--<img src="img/boroda-01.png" alt="Bearded face" height="50" width="50">-->
+              <svg class="page-footer__face-img" width="32" height="53">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#head"></use>
+              </svg>
             </div>
           <span>© Иван Савитский 2017</span>
           </div>
