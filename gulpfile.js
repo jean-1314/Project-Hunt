@@ -41,3 +41,23 @@ gulp.task("symbols", function() {
     .pipe(rename("symbols.svg"))
     .pipe(gulp.dest("img"));
 });
+
+gulp.task("svgimgs", function(){
+  return gulp.src("img/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("svg-imgs.svg"))
+    .pipe(gulp.dest("img"));
+});
+
+gulp.task("sedona", function(){
+  return gulp.src("img/text-sedona.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sedona.svg"))
+    .pipe(gulp.dest("img"));
+});
