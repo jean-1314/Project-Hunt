@@ -5,6 +5,7 @@
 .resume__wrapper {
   @include container();
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .resume__heading {
@@ -87,4 +88,72 @@
 
 .resume__unit-icon {
   @include visually-hidden;
+}
+
+.resume__container--right {
+  position: relative;
+}
+
+.resume__button {
+  position: absolute;
+  top: -18px;
+  left: 45%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.resume__button-icon {
+  position: absolute;
+  height: 30px;
+  &:hover {
+    fill: $brown;
+    cursor: pointer;
+  }
+}
+
+.resume__button--off + .resume__units {
+  display: none;
+}
+
+.resume__button--nojs {
+  display: none;
+}
+
+.resume__button--nojs + .resume__units {
+  display: block;
+}
+
+.resume__button-tooltip {
+  position: relative;
+}
+
+.resume__button-tooltiptext {
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  top: -20px;
+  visibility: hidden;
+  min-width: 100px;
+  background-color: $darkblue;
+  color: $sand;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent $darkblue transparent transparent;
+  }
+}
+
+.resume__button:hover .resume__button-tooltiptext {
+    visibility: visible;
 }
