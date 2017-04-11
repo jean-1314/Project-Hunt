@@ -99,21 +99,29 @@
 }
 
 .page-footer__logo {
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
 }
 
-.page-footer__logo-title-img {
-  position: relative;
+.page-footer__logo-title {
   z-index: 1;
+  text-align: center;
 }
 
 .page-footer__face {
   position: relative;
+  left: 108px;
+  top: -70px;
+  width: 60px;
+  z-index: 0;
+  text-align: center;
 }
 
-.page-footer__face-img {
-  position: absolute;
-  z-index: 0;
-  top: -70px;
-  left: 250px;
+.page-footer__copyright {
+  display: block;
+  text-align: center;
 }
+
