@@ -48,3 +48,20 @@
 .portfolio__item-img {
   text-align: center;
 }
+
+@media #{$tablet} {
+
+  .portfolio__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .portfolio__wrapper h2 {
+    width: 100%;
+  }
+
+  .portfolio__item {
+    width: 48%;
+  }
+}

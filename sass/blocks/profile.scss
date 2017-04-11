@@ -5,3 +5,10 @@
 .profile__wrapper {
   @include container();
 }
+
+@media #{$tablet} {
+  .profile__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

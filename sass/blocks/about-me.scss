@@ -1,3 +1,10 @@
 .about-me h2 {
   text-align: center;
 }
+
+@media #{$tablet} {
+  .about-me {
+    order: 3;
+    padding-bottom: 10px;
+  }
+}

@@ -17,3 +17,9 @@
   top: 7px;
   left: 0;
 }
+
+@media #{$tablet} {
+  .logo {
+    padding-bottom: 20px;
+  }
+}

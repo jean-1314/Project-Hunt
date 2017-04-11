@@ -44,3 +44,20 @@
   color: $blue;
   text-decoration: none;
 }
+
+@media #{$tablet} {
+  .contact__details {
+    flex-direction: row;
+  }
+
+  .contact__item {
+    position: relative;
+    text-align: center;
+  }
+
+  .contact__item-icon {
+    position: absolute;
+    top: -20px;
+    left: 45%;
+  }
+}

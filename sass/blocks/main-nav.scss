@@ -118,3 +118,22 @@
     display: none;
   }
 }
+
+@media #{$tablet} {
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__items {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+
+  .main-nav__item {
+    border-top: none;
+    border-bottom: none;
+    width: initial;
+  }
+}

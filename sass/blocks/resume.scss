@@ -87,7 +87,7 @@
 }
 
 .resume__unit-icon {
-  @include visually-hidden;
+  display: none;
 }
 
 .resume__container--right {
@@ -156,4 +156,63 @@
 
 .resume__button:hover .resume__button-tooltiptext {
     visibility: visible;
+}
+
+@media #{$tablet} {
+
+  .resume__wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .resume__heading {
+    justify-content: flex-start;
+  }
+
+  .resume__heading--left {
+    width: 50%;
+  }
+
+  .resume__download {
+    width: 42.5%;
+    justify-content: center;
+  }
+
+  .resume__heading--left h2 {
+    padding-bottom: 8px;
+  }
+
+  .resume__unit--right {
+    position: relative;
+    align-items: flex-start;
+    width: 35%;
+    padding-left: 0;
+    border-bottom: none;
+  }
+
+  .resume__study,
+  .resume__work {
+    padding-bottom: 20px;
+  }
+
+  .resume__unit-icon {
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 35px;
+  }
+
+  .resume__unit-icon--calendar {
+    top: 45px;
+  }
+
+  .resume__button {
+    left: 18.5%;
+  }
+
+  .resume__button-tooltiptext {
+    top: 0;
+    min-width: 300px;
+  }
 }

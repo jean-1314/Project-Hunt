@@ -27,3 +27,10 @@
 .welcome__info p {
   padding: 0;
 }
+
+@media #{$tablet} {
+
+  .welcome__info {
+    padding-bottom: 30px;
+  }
+}

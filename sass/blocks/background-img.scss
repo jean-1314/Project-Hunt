@@ -19,3 +19,9 @@
   font-size: 28px;
   text-align: center;
 }
+
+@media #{$tablet} {
+  .background-img__caption {
+    padding-bottom: 20px;
+  }
+}

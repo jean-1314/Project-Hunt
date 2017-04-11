@@ -3,3 +3,13 @@
   padding-top: 20px;
   text-align: center;
 }
+
+@media #{$tablet} {
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    width: 49%;
+  }
+}

@@ -125,3 +125,31 @@
   text-align: center;
 }
 
+@media #{$tablet} {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+
+  .page-footer__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+  }
+
+  .page-footer__social-list li {
+    width: 25%;
+  }
+
+  .page-footer__copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .page-footer__logo {
+    align-self: center;
+  }
+}

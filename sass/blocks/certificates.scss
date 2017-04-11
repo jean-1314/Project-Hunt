@@ -18,3 +18,22 @@
 .certificates__item-link:hover {
   opacity: 0.8;
 }
+
+@media #{$tablet} {
+
+  .certificates__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .certificates__wrapper h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .certificates__item {
+    width: 48%;
+    align-items: center;
+  }
+}
