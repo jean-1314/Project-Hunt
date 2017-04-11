@@ -127,6 +127,7 @@
 
 @media #{$tablet} {
   .page-footer__wrapper {
+    position: relative;
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
@@ -145,8 +146,8 @@
 
   .page-footer__copyright {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5%;
+    right: 8%;
   }
 
   .page-footer__logo {

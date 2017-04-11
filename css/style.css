@@ -935,6 +935,7 @@ img {
 
 @media (min-width: 768px) {
   .page-footer__wrapper {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -952,8 +953,8 @@ img {
     width: 25%; }
   .page-footer__copyright {
     position: absolute;
-    bottom: 0;
-    right: 0; }
+    bottom: 5%;
+    right: 8%; }
   .page-footer__logo {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
