@@ -154,3 +154,41 @@
     align-self: center;
   }
 }
+
+@media #{$desktop} {
+
+  .page-footer__social {
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  .page-footer__social-img {
+    top: -35px;
+    left: 35%;
+    width: 25px;
+    height: 25px;
+  }
+
+  .page-footer__social-link {
+    position: static;
+  }
+
+  .page-footer__social-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .page-footer__social-list li {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .page-footer__copyright {
+    right: 9.5%;
+  }
+}

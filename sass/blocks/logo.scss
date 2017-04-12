@@ -23,3 +23,9 @@
     padding-bottom: 20px;
   }
 }
+
+@media #{$desktop} {
+  .logo {
+    width: 30%;
+  }
+}

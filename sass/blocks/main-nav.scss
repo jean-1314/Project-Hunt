@@ -137,3 +137,14 @@
     width: initial;
   }
 }
+
+@media #{$desktop} {
+  .main-nav {
+    width: 64%;
+    align-self: center;
+  }
+
+  .main-nav__items {
+    padding-bottom: 0;
+  }
+}

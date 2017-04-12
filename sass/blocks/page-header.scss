@@ -6,3 +6,11 @@
   @include container;
   position: relative;
 }
+
+@media #{$desktop} {
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

@@ -34,3 +34,10 @@
     padding-bottom: 30px;
   }
 }
+
+@media #{$desktop} {
+  .welcome__info {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

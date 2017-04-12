@@ -13,3 +13,10 @@
     width: 49%;
   }
 }
+
+@media #{$desktop} {
+  .avatar {
+    width: 30%;
+    align-self: flex-start;
+  }
+}

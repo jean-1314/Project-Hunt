@@ -37,3 +37,10 @@
     align-items: center;
   }
 }
+
+@media #{$desktop} {
+  .certificates__item-description {
+    width: 80%;
+    text-align: center;
+  }
+}

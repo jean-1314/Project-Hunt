@@ -12,3 +12,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media #{$desktop} {
+  .profile__wrapper {
+    justify-content: space-around;
+  }
+}

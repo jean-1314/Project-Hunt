@@ -39,3 +39,10 @@
     width: 49%;
   }
 }
+
+@media #{$desktop} {
+  .skillset {
+    width: 30%;
+    order: 3;
+  }
+}
