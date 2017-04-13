@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 400px;
+  height: 400px;
   background-color: $black;
   background-repeat: no-repeat;
 }
 
 .background-img__wrapper {
   @include container();
-  height: inherit;
+  height: 30px;
   padding-bottom: 30px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 @media #{$tablet} {
-  .background-img__caption {
+  .background-img__wrapper {
     padding-bottom: 20px;
   }
 }
@@ -37,9 +37,16 @@
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     width: 100%;
+    height: 100%;
   }
 
   .background-img__wrapper {
     min-width: auto;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .background-img__caption {
+    padding-bottom: 30px;
   }
 }

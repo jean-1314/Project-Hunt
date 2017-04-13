@@ -102,14 +102,15 @@
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .resume__button-icon {
   position: absolute;
   height: 30px;
+
   &:hover {
     fill: $brown;
-    cursor: pointer;
   }
 }
 
@@ -235,8 +236,13 @@
   }
 
   .resume__button {
-    top: 0;
+    top: 15px;
     left: 30%;
+  }
+
+  .resume__button-icon {
+    top: 0;
+    left: 0;
   }
 
   .resume__download {

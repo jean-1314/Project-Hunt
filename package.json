@@ -16,7 +16,8 @@
     "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgmin": "^1.2.3",
-    "gulp-svgstore": "^6.1.0"
+    "gulp-svgstore": "^6.1.0",
+    "svgxuse": "^1.2.4"
   },
   "scripts": {
     "build": "gulp style",
