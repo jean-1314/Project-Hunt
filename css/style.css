@@ -1381,6 +1381,8 @@ img {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .resume__heading {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     width: 97%; }
   .resume__container {
     width: 47%; }
