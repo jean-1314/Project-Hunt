@@ -44,3 +44,19 @@
     text-align: center;
   }
 }
+
+@media #{$desktop-l} {
+  .certificates {
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+    background-color: transparent;
+  }
+
+  .certificates__wrapper {
+    min-width: auto;
+  }
+
+  .certificates__wrapper h2 {
+    margin-bottom: 90px;
+  }
+}

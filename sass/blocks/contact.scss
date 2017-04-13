@@ -61,3 +61,22 @@
     left: 45%;
   }
 }
+
+@media #{$desktop-l} {
+  .contact {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    align-self: center;
+    padding-top: 300px;
+    background-color: transparent;
+  }
+
+  .contact__details {
+    min-width: auto;
+    flex-direction: column;
+  }
+
+  .contact__item {
+    padding-bottom: 80px;
+  }
+}

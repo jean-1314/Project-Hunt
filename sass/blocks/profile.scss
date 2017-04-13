@@ -18,3 +18,15 @@
     justify-content: space-around;
   }
 }
+
+@media #{$desktop-l} {
+  .profile {
+    grid-column: 5 / 7;
+    grid-row: 1 / 2;
+  }
+
+  .profile__wrapper {
+    flex-direction: column;
+    min-width: auto;
+  }
+}

@@ -15,3 +15,9 @@
     order: 2;
   }
 }
+
+@media #{$desktop-l} {
+  .about-me {
+    width: auto;
+  }
+}

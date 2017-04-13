@@ -243,3 +243,23 @@
     justify-content: flex-end;
   }
 }
+
+@media #{$desktop-l} {
+  .resume {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .resume__wrapper {
+    min-width: auto;
+    flex-direction: column;
+  }
+
+  .resume__container {
+    width: auto;
+  }
+
+  .resume__button-tooltiptext {
+    min-width: 200px;
+  }
+}

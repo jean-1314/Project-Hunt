@@ -12,6 +12,11 @@
     min-width: 980px;
     padding: 0 2%;
   }
+
+  @media #{$desktop-l} {
+    min-width: 1360px;
+    padding: 0 2.7%;
+  }
 }
 
 @mixin visually-hidden() {

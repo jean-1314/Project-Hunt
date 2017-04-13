@@ -41,3 +41,14 @@
     padding-right: 5%;
   }
 }
+
+@media #{$desktop-l} {
+  .welcome {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+  }
+
+  .welcome__wrapper {
+    min-width: auto;
+  }
+}

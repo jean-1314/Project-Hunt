@@ -72,3 +72,22 @@
     width: 30%;
   }
 }
+
+@media #{$desktop-l} {
+  .portfolio {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .portfolio__wrapper {
+    min-width: auto;
+  }
+
+  .portfolio__item-img--sedona {
+    height: 30%;
+  }
+
+  .portfolio__item-img--hunt {
+    height: 60%;
+  }
+}
