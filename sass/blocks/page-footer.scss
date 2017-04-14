@@ -114,7 +114,7 @@
 .page-footer__face {
   position: relative;
   left: 108px;
-  top: -70px;
+  top: -90px;
   width: 60px;
   z-index: 0;
   text-align: center;
@@ -144,11 +144,11 @@
     width: 25%;
   }
 
-  .page-footer__copyright {
-    position: absolute;
-    bottom: 5%;
-    right: 8%;
-  }
+  // .page-footer__copyright {
+  //   position: absolute;
+  //   bottom: 5%;
+  //   right: 8%;
+  // }
 
   .page-footer__logo {
     align-self: center;
