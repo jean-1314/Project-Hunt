@@ -2,9 +2,13 @@
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 700px 920px 1fr;
     grid-column: 1 / 1;
     grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
     justify-items: stretch;
     align-items: stretch;
     min-width: 1440px;

@@ -12,14 +12,31 @@
   text-align: center;
 }
 
+.portfolio__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  border: 3px solid $darkblue;
+  background-color: $bg-sand;
+  border-radius: 15px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio__item p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .portfolio__item-link {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
-  border: 3px solid $brown;
-  margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
   border-radius: 10px;
@@ -30,7 +47,7 @@
 }
 
 .portfolio__item-link--gllacy {
-  background-image: linear-gradient(#9db1a5, #849d8f);
+  background-image: linear-gradient(to top, #9db1a5, #849d8f);
 }
 
 .portfolio__item-link--sedona {
@@ -52,7 +69,7 @@
 @media #{$tablet} {
 
   .portfolio__wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -62,14 +79,47 @@
   }
 
   .portfolio__item {
-    width: 48%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+
+  .portfolio__item-link {
+    width: 33%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .portfolio__item-description {
+    width: 66%;
+  }
+
+  .portfolio__item-img--sedona {
+    height: 40px;
   }
 }
 
 @media #{$desktop} {
 
+  .portfolio__wrapper {
+    flex-direction: row;
+  }
+
   .portfolio__item {
+    flex-direction: column;
+    justify-content: flex-start;
     width: 30%;
+    margin-bottom: 30px;
+  }
+
+  .portfolio__item-link {
+    width: 100%;
+    margin: 0;
+  }
+
+  .portfolio__item-description {
+    width: auto;
   }
 }
 
@@ -77,10 +127,29 @@
   .portfolio {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 3;
+    -ms-grid-row-span: 1;
   }
 
   .portfolio__wrapper {
     min-width: auto;
+    flex-direction: column;
+  }
+
+  .portfolio__item {
+    flex-direction: row;
+    width: auto;;
+  }
+
+  .portfolio__item-link {
+    width: 33%;
+    margin: 0 10px;
+  }
+
+  .portfolio__item-description {
+    width: 66%;
   }
 
   .portfolio__item-img--sedona {

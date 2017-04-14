@@ -30,6 +30,10 @@
   .video {
     grid-column: 3 / 5;
     grid-row: 2 / 3;
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 2;
+    -ms-grid-row-span: 1;
     min-width: auto;
   }
 

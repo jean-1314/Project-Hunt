@@ -53,6 +53,10 @@
   .certificates {
     grid-column: 4 / 7;
     grid-row: 3 / 4;
+    -ms-grid-column: 4;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 3;
+    -ms-grid-row-span: 1;
     background-color: transparent;
   }
 
