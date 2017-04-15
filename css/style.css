@@ -1533,10 +1533,15 @@ img {
   position: relative; }
 
 .resume__button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 60px;
+  height: 55px;
   position: absolute;
-  top: -18px;
+  top: -30px;
   left: 45%;
-  height: 30px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -1544,7 +1549,9 @@ img {
 
 .resume__button-icon {
   position: absolute;
-  height: 30px; }
+  height: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
   .resume__button-icon:hover {
     fill: #864c24; }
 
