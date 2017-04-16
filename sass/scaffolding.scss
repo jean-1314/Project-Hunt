@@ -26,3 +26,41 @@ img {
     width: 100%;
   }
 }
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+
+  30% {
+    transform: translateX(-20px);
+  }
+
+  70% {
+    transform: translateX(0px);
+    z-index: 10;
+  }
+
+  100% {
+    z-index: 0;
+  }
+}
+
+@keyframes move-footer {
+   0% {
+    transform: translateX(0px);
+  }
+
+  30% {
+    transform: translateX(20px);
+  }
+
+  70% {
+    transform: translateX(0px);
+    z-index: 10;
+  }
+
+  100% {
+    z-index: 0;
+  }
+}

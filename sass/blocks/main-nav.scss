@@ -148,3 +148,9 @@
     padding-bottom: 0;
   }
 }
+
+@media #{$desktop-l} {
+  .main-nav {
+    display: none;
+  }
+}

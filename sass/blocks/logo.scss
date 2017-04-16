@@ -16,6 +16,12 @@
   z-index: 0;
   top: 7px;
   left: 0;
+
+  &:hover {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
 }
 
 @media #{$tablet} {

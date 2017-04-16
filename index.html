@@ -6,6 +6,7 @@
   <title>Иван Савитский</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="shortcut icon" href="img/boroda-01.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -55,7 +56,7 @@
       <section class="background-img">
         <div class="background-img__wrapper">
           <div class="background-img__caption">
-            <h1>Иван Савитский | HTML Верстальщик</h1>
+            <h1><span class="replace-me">Иван Савитский<span style="display:none">,HTML Верстальщик</span></span></h1>
           </div>
         </div>
       </section>
@@ -529,6 +530,10 @@
       </footer>
   </div>
   <script type="text/javascript" src="js/svgxuse.min.js"></script>
+  <script src="js/replaceme.js"></script>
+  <script>
+    var replace = new ReplaceMe(document.querySelector('.replace-me'));
+  </script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

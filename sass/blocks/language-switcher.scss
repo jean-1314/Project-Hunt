@@ -36,6 +36,7 @@
   &:hover {
     background-color: $black;
     color: $sand;
+    opacity: 0.8;
   }
 
   &:active {
@@ -54,6 +55,7 @@
   &:hover {
     background-color: $sand;
     color: $black;
+    opacity: 0.8;
   }
 
   &:active {
@@ -97,5 +99,17 @@
     border-top-left-radius: 15px;
     border: 3px solid $brown;
     border-bottom: none;
+  }
+}
+
+@media #{$desktop-l} {
+
+  .language-switcher {
+    top: 25%;
+    left: 80%;
+  }
+
+  .language-switcher__lang-link {
+    width: auto;
   }
 }

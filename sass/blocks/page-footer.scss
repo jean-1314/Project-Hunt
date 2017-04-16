@@ -118,6 +118,12 @@
   width: 60px;
   z-index: 0;
   text-align: center;
+
+  &:hover {
+    animation-name: move-footer;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
 }
 
 .page-footer__copyright {

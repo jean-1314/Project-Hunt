@@ -61,3 +61,59 @@ resumeToggle.addEventListener('click', function() {
     document.getElementById('button-down').style.display = 'none';
   }
 });
+
+//Anchor tag scroll, credits to http://markrabey.com
+
+window.scrollTo = (function () {
+  var timer, start, factor;
+
+  return function (target, duration) {
+    var offset = window.pageYOffset,
+        delta  = target - window.pageYOffset;
+    duration = duration || 300;
+    start = Date.now();
+    factor = 0;
+
+    if( timer ) {
+      clearInterval(timer);
+    }
+
+    function step() {
+      var y;
+      factor = (Date.now() - start) / duration;
+      if( factor >= 1 ) {
+        clearInterval(timer);
+        factor = 1;
+      }
+      y = factor * delta + offset;
+      window.scrollBy(0, y - window.pageYOffset);
+    }
+
+    timer = setInterval(step, 10);
+    return timer;
+  };
+}());
+
+var welcomeLink = document.querySelector('[href="#welcome"]');
+welcomeLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('welcome').offsetTop);
+}, false);
+
+var profileLink = document.querySelector('[href="#profile"]');
+profileLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('profile').offsetTop);
+}, false);
+
+var resumeLink = document.querySelector('[href="#resume"]');
+resumeLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('resume').offsetTop);
+}, false);
+
+var portfolioLink = document.querySelector('[href="#portfolio"]');
+portfolioLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('portfolio').offsetTop);
+}, false);
