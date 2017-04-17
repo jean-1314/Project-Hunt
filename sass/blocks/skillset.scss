@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.skillset h2{
+.skillset h2 {
   text-align: center;
 }
 
@@ -43,13 +43,25 @@
 
 @media #{$desktop} {
   .skillset {
-    width: 30%;
-    order: 3;
+    width: 49%;
+    order: 2;
   }
 }
 
 @media #{$desktop-l} {
   .skillset {
     width: auto;
+  }
+
+  .skillset--visible {
+    display: block;
+  }
+
+  .skillset--hidden {
+    display: none;
+  }
+
+  .skillset h2 {
+    margin-top: 0;
   }
 }

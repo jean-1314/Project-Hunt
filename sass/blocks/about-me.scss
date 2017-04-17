@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.about-me__link {
+  color: $brown;
+
+  &:visited {
+    color: $sand;
+  }
+}
+
+.about-me__btn {
+  display: none;
+}
+
+.about-me__btn--nojs {
+    display: none;
+  }
+
 @media #{$tablet} {
   .about-me {
     order: 3;
@@ -9,15 +25,38 @@
   }
 }
 
-@media #{$desktop} {
-  .about-me {
-    width: 30%;
-    order: 2;
-  }
-}
-
 @media #{$desktop-l} {
   .about-me {
+    order: 1;
     width: auto;
+    padding-bottom: 0;
+  }
+
+  .about-me__btn {
+    display: inline;
+    border: 0;
+    border-bottom: 1px dashed $brown;
+    padding: 0;
+    color: $brown;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px dashed $sand;
+      color: $sand;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: $bg-sand;
+    }
+  }
+
+  .about-me__toggle--on {
+    display: block;
+  }
+
+  .about-me__toggle--off {
+    display: none;
   }
 }

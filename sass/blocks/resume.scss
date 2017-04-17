@@ -249,6 +249,10 @@
     left: 0;
   }
 
+  .resume__button-tooltiptext {
+    top: -25px;
+  }
+
   .resume__download {
     justify-content: flex-end;
   }
@@ -275,5 +279,9 @@
 
   .resume__button-tooltiptext {
     min-width: 200px;
+  }
+
+  .resume__container--left {
+    height: 380px;
   }
 }
