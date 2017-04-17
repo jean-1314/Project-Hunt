@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <svg style="display:none">
+
+      <symbol viewBox="0 0 60 60" id="htmlacademy">
+        <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </symbol>
+
+      <!--Social media icons-->
+
+      <symbol viewBox="0 0 17.5 14.663" id="icon-twitter">
+        <g id="W6EeEF_1_">
+          <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 8.672 18.944" id="icon-facebook">
+        <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+      </symbol>
+      <symbol viewBox="0 0 19.979 14.015" id="icon-youtube">
+        <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+      </symbol>
+
+      <!--Form icons-->
+
+      <symbol viewBox="0 0 18 18" id="icon-phone">
+        <g id="Page-1">
+          <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+            <g id="phone" transform="translate(85.000000, 126.000000)">
+              <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+            </g>
+          </g>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 16 16" id="icon-mail">
+        <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+      </symbol>
+
+    </svg>
+
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--closed page-header--nojs">
+        <div class="page-header__wrapper">
+
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+
+              <ul class="main-nav__items">
+
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="photo.html">Фото и видео</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+                </li>
+
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+                </li>
+              </ul>
+
+
+            <div class="page-header__logo">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg" >
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" width="102" height="83">
+                </picture>
+              </a>
+            </div>
+
+            <button class="main-nav__toggle" type="button">Показать меню</button>
+
+          </nav>
+        </div>
+      </header>
+
+      <main class="main-content main-content--rest">
+        <div class="main-content__wrapper main-content__wrapper--rest">
+
+          <div class="main-image main-image--rest">
+            <img class="main-image__caption main-image__caption--rest" src="img/text-sedona.svg" alt="Sedona Caption" width="229" height="39">
+          </div>
+
+          <div class="main-content__wrapper--form">
+
+            <section class="page-title">
+              <h1 class="page-title__heading page-title__heading--rest">Оставьте свой отзыв</h1>
+              <p class="page-title__caption page-title__caption--rest">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также&nbsp;о посещённых вами достопримечательностях</p>
+            </section>
+
+            <section class="feedback">
+              <form id="feedback-form" class="feedback-form" action="https://echo.htmlacademy.ru/">
+
+                <div class="feedback-form__name">
+                  <span class="feedback-form__title">Представьтесь:</span>
+
+                  <div class="feedback-item feedback-item--name">
+                    <label for="first-name" class="feedback-item__label">Имя*:</label>
+                    <input id="first-name" class="feedback-item__input" type="text" name="first-name" value="" required>
+                  </div>
+
+                  <div class="feedback-item feedback-item--name">
+                    <label for="last-name" class="feedback-item__label">Фамилия*:</label>
+                    <input id="last-name" class="feedback-item__input" type="text" name="last-name" value="" required>
+                  </div>
+
+                  <div class="feedback-item feedback-item--name">
+                    <label for="patronymic-name" class="feedback-item__label">Отчество:</label>
+                    <input id="patronymic-name" class="feedback-item__input" type="text" name="patronymic-name" value="">
+                  </div>
+                </div>
+
+                <div class="feedback-form__contacts">
+                  <span class="feedback-form__title">Контактная информация:</span>
+
+                  <div class="feedback-item feedback-item--contacts">
+                    <label for="phone-id" class="feedback-item__label"><span class="feedback-item__label--hidden">Контактный&nbsp;</span>телефон*:</label>
+                    <input id="phone-id" class="feedback-item__input" type="tel" name="phone" value="" required>
+                    <svg class="feedback-item__icon feedback-item__icon--phone" width="18" height="18">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
+                    </svg>
+                  </div>
+
+                  <div class="feedback-item feedback-item--contacts">
+                    <label for="email" class="feedback-item__label">Электронная&nbsp;почта*:</label>
+                    <input id="email" class="feedback-item__input" type="email" name="email" value="" required>
+                    <svg class="feedback-item__icon feedback-item__icon--mail" width="16" height="16">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="feedback-form__radio">
+                  <span class="feedback-form__title">Ваше общее впечатление:</span>
+
+                  <div class="feedback-item feedback-item--radio">
+                    <input id="radio-good" class="feedback-item__radio-input" type="radio" name="impression" checked>
+                    <label for="radio-good" class="feedback-item__radio-label">Скорее положительное</label>
+                  </div>
+
+                  <div class="feedback-item feedback-item--radio">
+                    <input id="radio-bad" class="feedback-item__radio-input" type="radio" name="impression">
+                    <label for="radio-bad" class="feedback-item__radio-label">Скорее отрицательное</label>
+                  </div>
+
+                  <div class="feedback-item feedback-item--radio">
+                    <input id="radio-undecided" class="feedback-item__radio-input" type="radio" name="impression">
+                    <label for="radio-undecided" class="feedback-item__radio-label">Затрудняюсь ответить</label>
+                  </div>
+                </div>
+
+                <div class="feedback-form__checkbox">
+                  <span class="feedback-form__title">Посещённые достопримечательности:</span>
+
+                  <div class="feedback-form__checkbox-container">
+
+                    <div class="feedback-item feedback-item--checkbox">
+                      <input id="devil-bridge" class="feedback-item__checkbox-input" type="checkbox" name="devil-bridge" checked>
+                      <label for="devil-bridge" class="feedback-item__checkbox-label">Мост Дьявола</label>
+                    </div>
+
+                    <div class="feedback-item feedback-item--checkbox">
+                      <input id="slide-park" class="feedback-item__checkbox-input" type="checkbox" name="slide-park" checked>
+                      <label for="slide-park" class="feedback-item__checkbox-label">Слайд-парк</label>
+                    </div>
+
+                    <div class="feedback-item feedback-item--checkbox">
+                      <input id="bell-mtn" class="feedback-item__checkbox-input" type="checkbox" name="bell-mtn">
+                      <label for="bell-mtn" class="feedback-item__checkbox-label">Гора-Колокол</label>
+                    </div>
+
+                    <div class="feedback-item feedback-item--checkbox">
+                      <input id="red-rocks" class="feedback-item__checkbox-input" type="checkbox" name="red-rocks" checked>
+                      <label for="red-rocks" class="feedback-item__checkbox-label">Красные скалы</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feedback-form__textarea">
+                  <span class="feedback-form__title">Опишите свои эмоции:</span>
+                  <div class="feedback-item feedback-item--textarea">
+                    <textarea id="feedback-input-text" class="feedback-item__textarea-input" rows="9" cols="36" name="input-text" required></textarea>
+                    <label for="feedback-input-text" class="feedback-item__textarea-label">Опишите подробно все свои восторги</label>
+                  </div>
+                </div>
+
+                <div class="feedback-item feedback-item--submit">
+                  <input class="btn btn-submit" type="submit" name="feedback-submit" value="Отправить отзыв">
+                </div>
+
+                <div class="feedback-form__warning">
+                  <span class="feedback-form__warning-line">* – Обязательные поля</span>
+                </div>
+
+              </form>
+
+              <section class="form-error">
+                <h2 class="form-error__title">Что-то пошло не так!</h2>
+                <p class="form-error__info">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+                <button class="form-error__btn btn btn-close" type="button">OK</button>
+              </section>
+
+              <section class="form-onsubmit form-onsubmit--closed">
+                <h2 class="form-onsubmit__title">Ваш отзыв отправлен!</h2>
+                <p class="form-onsubmit__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+                <div class="form-onsubmit__btn-container">
+                  <button class="form-onsubmit__btn btn btn-close" type="button">Закрыть окно</button>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper page-footer__wrapper--form">
+
+          <span class="page-footer__hashtag">#visitsedona</span>
+
+          <div class="page-footer__social">
+            <a class="social-btn social-btn--tw" href="#">Твиттер
+              <svg class="social-btn__icon social-btn__icon--tw" width="18" height="20">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+
+            <a class="social-btn social-btn--fb" href="#">Фейсбук
+              <svg class="social-btn__icon social-btn__icon--fb" width="18" height="18">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+
+            <a class="social-btn social-btn--yt" href="#">Youtube
+              <svg class="social-btn__icon social-btn__icon--yt" width="20" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="page-footer__copyright">
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">Разработано</a>
+            <svg class="page-footer__copyright-logo" width="27" height="34">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
+            </svg>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/picturefill.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
