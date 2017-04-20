@@ -37,14 +37,18 @@
 @media #{$tablet} {
   .skillset {
     order: 2;
-    width: 49%;
+    width: 90%;
+  }
+
+  .skillset__else {
+    width: 80%;
   }
 }
 
 @media #{$desktop} {
   .skillset {
-    width: 49%;
-    order: 2;
+    order: 1;
+    width: 33%;
   }
 }
 

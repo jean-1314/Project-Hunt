@@ -20,8 +20,15 @@
 
 @media #{$tablet} {
   .about-me {
-    order: 3;
+    order: 2;
+    width: auto;
     padding-bottom: 10px;
+  }
+}
+
+@media #{$desktop} {
+  .about-me {
+    width: 66%;
   }
 }
 

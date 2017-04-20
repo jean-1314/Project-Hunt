@@ -4,6 +4,9 @@
   justify-content: flex-end;
   height: 400px;
   background-color: $black;
+  background-image: url("../img/profile-pic-vert.jpg");
+  background-size: 100%;
+  background-position-y: 30%;
   background-repeat: no-repeat;
 }
 
@@ -20,7 +23,20 @@
   text-align: center;
 }
 
+@media (min-width: 550px) {
+  .background-img {
+    height: 370px;
+    background-image: url("../img/profile-pic.jpg");
+    background-position-y: 0;
+  }
+}
+
 @media #{$tablet} {
+
+  .background-img {
+    height: 500px;
+  }
+
   .background-img__wrapper {
     padding-bottom: 20px;
   }
@@ -42,6 +58,8 @@
     -ms-grid-row-span: 1;
     width: 100%;
     height: 100%;
+    background-image: url("../img/profile-pic-vert.jpg");
+    background-position-y: 40%;
   }
 
   .background-img__wrapper {

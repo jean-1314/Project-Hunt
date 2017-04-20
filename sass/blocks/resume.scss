@@ -94,75 +94,6 @@
   position: relative;
 }
 
-.resume__button {
-  display: flex;
-  align-items: center;
-  width: 60px;
-  height: 55px;
-  position: absolute;
-  top: -30px;
-  left: 45%;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.resume__button-icon {
-  position: absolute;
-  height: 30px;
-  align-self: flex-start;
-
-  &:hover {
-    fill: $brown;
-  }
-}
-
-.resume__button--off + .resume__units {
-  display: none;
-}
-
-.resume__button--nojs {
-  display: none;
-}
-
-.resume__button--nojs + .resume__units {
-  display: block;
-}
-
-.resume__button-tooltip {
-  position: relative;
-}
-
-.resume__button-tooltiptext {
-  position: absolute;
-  z-index: 1;
-  left: 50px;
-  top: -20px;
-  visibility: hidden;
-  min-width: 100px;
-  background-color: $darkblue;
-  color: $sand;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent $darkblue transparent transparent;
-  }
-}
-
-.resume__button:hover .resume__button-tooltiptext {
-    visibility: visible;
-}
-
 @media #{$tablet} {
 
   .resume__wrapper {
@@ -211,15 +142,6 @@
   .resume__unit-icon--calendar {
     top: 45px;
   }
-
-  .resume__button {
-    left: 18.5%;
-  }
-
-  .resume__button-tooltiptext {
-    top: 0;
-    min-width: 300px;
-  }
 }
 
 @media #{$desktop} {
@@ -239,20 +161,6 @@
     width: 47%;
   }
 
-  .resume__button {
-    top: 15px;
-    left: 30%;
-  }
-
-  .resume__button-icon {
-    top: 0;
-    left: 0;
-  }
-
-  .resume__button-tooltiptext {
-    top: -25px;
-  }
-
   .resume__download {
     justify-content: flex-end;
   }
@@ -260,11 +168,11 @@
 
 @media #{$desktop-l} {
   .resume {
-    grid-column: 1 / 3;
+    grid-column: 1 / 5;
     grid-row: 2 / 3;
     -ms-grid-column: 1;
     -ms-grid-row: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 4;
     -ms-grid-row-span: 1;
   }
 
@@ -273,12 +181,17 @@
     flex-direction: column;
   }
 
-  .resume__container {
-    width: auto;
+  .resume__heading {
+    width: 50%;
+    justify-content: flex-start;
   }
 
-  .resume__button-tooltiptext {
-    min-width: 200px;
+  .resume__download {
+    justify-content: flex-end;
+  }
+
+  .resume__container {
+    width: auto;
   }
 
   .resume__container--left {
