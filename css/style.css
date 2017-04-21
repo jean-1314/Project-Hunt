@@ -1631,6 +1631,11 @@ img {
 .resume__container--right {
   position: relative; }
 
+.portfolio__item-description-link {
+  color: #864c24; }
+  .portfolio__item-description-link:visited {
+    color: #c8b374; }
+
 @media (min-width: 768px) {
   .resume__wrapper {
     padding-top: 20px;

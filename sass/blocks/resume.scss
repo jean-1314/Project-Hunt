@@ -94,6 +94,14 @@
   position: relative;
 }
 
+.portfolio__item-description-link {
+  color: $brown;
+
+  &:visited {
+    color: $sand;
+  }
+}
+
 @media #{$tablet} {
 
   .resume__wrapper {
