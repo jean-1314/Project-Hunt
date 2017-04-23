@@ -32,6 +32,7 @@
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 100%
   }
 
   .features__why,
@@ -47,6 +48,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+
+  .features__why-list li,
+  .features__what-list li {
+    width: 100%;
+  }
+}
+
+@media #{$desktop} {
+
+  .features__wrapper {
+    width: 100%;
   }
 }
 
@@ -69,7 +82,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
   }
 
   .features__why,
@@ -80,10 +92,5 @@
   .features__why {
     margin-top: 70px;
     margin-bottom: 40px;
-  }
-
-  .features__why-list li,
-  .features__what-list li {
-    width: 100%;
   }
 }
