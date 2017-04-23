@@ -158,6 +158,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .resume__heading {
@@ -187,6 +189,8 @@
   .resume__wrapper {
     min-width: auto;
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .resume__heading {

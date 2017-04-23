@@ -60,6 +60,10 @@
       background-image: url("../img/profile-pic@2x.jpg");
     }
   }
+
+  .background-img__caption {
+    padding-bottom: 30px;
+  }
 }
 
 @media #{$desktop-l} {

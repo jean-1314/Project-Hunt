@@ -163,6 +163,10 @@
 
 @media #{$desktop} {
 
+  .page-footer__wrapper {
+    padding-top: 20px;
+  }
+
   .page-footer__social {
     justify-content: space-between;
     width: 30%;
@@ -207,6 +211,10 @@
     -ms-grid-row: 3;
     -ms-grid-column-span: 1;
     -ms-grid-row-span: 1;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 20px;
   }
 
   .page-footer__social-img {
