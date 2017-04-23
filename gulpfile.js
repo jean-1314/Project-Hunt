@@ -30,19 +30,29 @@ gulp.task("style", function() {
       sort: true
     })
   ]))
-  .pipe(gulp.dest("css"))
+  .pipe(gulp.dest("build/css"))
   .pipe(minify())
   .pipe(rename("style.min.css"))
-  .pipe(server.stream());
+  .pipe(gulp.dest("build/css"))
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("html:copy", function(){
+  return gulp.src("*.html")
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("html:update", ["html:copy"], function(done) {
+  server.reload();
+  done();
+});
+
+gulp.task("serve", function() {
   server.init({
-    server: "."
+    server: "build/"
   });
 
   gulp.watch("sass/**/*.scss", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html:update"]);
 });
 
 gulp.task("symbols", function() {
@@ -76,22 +86,22 @@ gulp.task("sedona", function(){
 });
 
 gulp.task("images", function() {
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
     ]))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 })
 
 gulp.task("compress", function() {
-  gulp.src("js/*.js")
+  gulp.src("build/js/*.js")
     .pipe(minify({
         ext:{
-            min:"min.js"
+            min:".min.js"
         },
     }))
-    .pipe(gulp.dest("js"))
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("copy", function() {
