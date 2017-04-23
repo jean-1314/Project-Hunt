@@ -1761,9 +1761,9 @@ img {
   .background-img {
     background-image: url("../img/profile-pic-vert@2x.jpg"); } }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+/*@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .background-img {
-    background-image: url("../img/profile-pic-vert-mobile@2x.jpg"); } }
+    background-image: url("../img/profile-pic-vert-mobile@2x.jpg"); } }*/
 
 @media (max-width: 767px) {
   .main-nav--closed .main-nav__items {
