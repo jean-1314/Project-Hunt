@@ -109,6 +109,7 @@ gulp.task("copy", function() {
     "gllacy/**",
     "sedona/**",
     "docs/**",
+    "fonts/**",
     "img/**",
     "js/**",
     "*.html"
