@@ -108,6 +108,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "gllacy/**",
     "sedona/**",
+    "startex/**",
     "docs/**",
     "fonts/**",
     "img/**",
