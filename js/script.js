@@ -8,12 +8,6 @@ var navToggle = document.querySelector('.main-nav__toggle');
 // var resumeToggle = document.querySelector('.resume__button');
 // var resumeIconUp = document.querySelector('.resume__button-icon--up');
 
-var aboutMeBtn = document.querySelector('.about-me__btn');
-var aboutMeBtnMore = document.querySelector('.about-me__btn--more');
-var aboutMeBtnLess = document.querySelector('.about-me__btn--less');
-var aboutMeToggle = document.querySelector('.about-me__toggle');
-var skillset = document.querySelector('.skillset');
-
 // No js default values
 
 navMain.classList.remove('main-nav--nojs');
