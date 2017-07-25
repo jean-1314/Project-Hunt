@@ -178,23 +178,24 @@
 
 @media #{$desktop-l} {
   .resume {
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-row: 2;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
     -ms-grid-column-span: 4;
     -ms-grid-row-span: 1;
   }
 
   .resume__wrapper {
     min-width: auto;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
   .resume__heading {
-    width: 50%;
+    width: 100%;
     justify-content: flex-start;
   }
 
@@ -207,6 +208,19 @@
   }
 
   .resume__container--left {
+    width: 40%;
     height: 380px;
+  }
+
+  .resume__container--right {
+    width: 55%;
+  }
+
+  .resume__unit--right {
+    padding-right: 20px;
+  }
+
+  .resume__study {
+    min-width: 150px;
   }
 }
