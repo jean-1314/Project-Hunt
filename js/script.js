@@ -5,9 +5,6 @@ var ruBlock = document.querySelector('.language-switcher__lang-link--ru');
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-// var resumeToggle = document.querySelector('.resume__button');
-// var resumeIconUp = document.querySelector('.resume__button-icon--up');
-
 var aboutMeBtn = document.querySelector('.about-me__btn');
 var aboutMeBtnMore = document.querySelector('.about-me__btn--more');
 var aboutMeBtnLess = document.querySelector('.about-me__btn--less');
@@ -17,7 +14,6 @@ var skillset = document.querySelector('.skillset');
 // No js default values
 
 navMain.classList.remove('main-nav--nojs');
-// resumeToggle.classList.remove('resume__button--nojs');
 aboutMeBtn.classList.remove('about-me__btn--nojs');
 aboutMeBtnLess.style.display = 'none';
 
@@ -56,27 +52,6 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
-
-// Resume button toggle
-
-// document.getElementById('button-up').style.display = 'none';
-
-// resumeToggle.addEventListener('click', function() {
-
-//   if (resumeToggle.classList.contains('resume__button--on')) {
-//     resumeToggle.classList.remove('resume__button--on');
-//     resumeToggle.classList.add('resume__button--off');
-//     document.getElementById('button-up').style.display = 'none';
-//     document.getElementById('button-down').style.display = 'block';
-//   }
-
-//   else {
-//     resumeToggle.classList.add('resume__button--on');
-//     resumeToggle.classList.remove('resume__button--off');
-//     document.getElementById('button-up').style.display = 'block';
-//     document.getElementById('button-down').style.display = 'none';
-//   }
-// });
 
 // About Me text toggle on 1440+
 
