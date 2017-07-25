@@ -62,8 +62,7 @@
           <button class="main-nav__toggle" type="button">Показать меню</button>
 
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="#welcome">Приветствие</a></li>
-            <li class="main-nav__item"><a href="#profile">Обо мне</a></li>
+
             <li class="main-nav__item"><a href="#resume">Резюме</a></li>
             <li class="main-nav__item"><a href="#portfolio">Портфолио</a></li>
             <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
@@ -78,15 +77,6 @@
         <div class="background-img__wrapper">
           <div class="background-img__caption">
             <h1><span class="replace-me">Иван Савитский<span style="display:none">,HTML Верстальщик</span></span></h1>
-          </div>
-        </div>
-      </section>
-
-      <section id="welcome" class="welcome">
-        <div class="welcome__wrapper">
-          <h2>Добро пожаловать!</h2>
-          <div class="welcome__info">
-            <p>Приветствую вас на моём сайте! Большое спасибо за то, что уделили пару минут и посетили эту страницу. Она расскажет обо мне несколько больше, чем может отразить расширенное резюме. Надеюсь, вы останетесь довольными посещением сайта и перезвоните мне или свяжетесь со мной по электронной почте. </p>
           </div>
         </div>
       </section>
@@ -117,332 +107,266 @@
         </ul>
       </section>
 
-      <section id="profile" class="profile">
 
-        <div class="profile__wrapper">
 
-          <div class="about-me">
-            <h2>Обо мне</h2>
-            <p class="about-me__paragraph">Моя краткая биография: окончив МГПУ по специальности лингвист-переводчик, прошёл обучение в магистратуре Байройтского университета (Германия) по программе двойного диплома и с отличием защитился. Далее работал в нескольких местах, пока поставленная задача на текущем месте работы – создание сайта на простом конструкторе, поддержка и наполнение его контентом – не натолкнула на мысль о более глубоком изучении веб-технологий.   <button class="about-me__btn about-me__btn--more about-me__btn--nojs">Читать далее</button><button class="about-me__btn about-me__btn--less about-me__btn--nojs">Свернуть</button></p>
-            <div class="about-me__toggle about-me__toggle--off">
-              <p class="about-me__paragraph">Подробное изучение основ фронтенд-разработки на <a class="about-me__link" href="https://www.coursera.org/specializations/web-design" target="_blank">онлайн-курсах университета Мичигана</a> подогрели мой интерес в этой предметной области, а курсы <a class="about-me__link" href="https://htmlacademy.ru/profile/id309949" target="_blank">htmlacademy.ru</a> и <a class="about-me__link" href="https://www.codecademy.com/jean_1314" target="_blank">codecademy.com</a> расширили горизонты знаний и умений, а также прибавили навыков. Успешно завершённые <a class="about-me__link" href="#certificates">интенсивные курсы htmlacademy.ru</a> дали мощную профессиональную платформу и повысили заинтересованность в веб-технологиях. Я принял решение сменить сферу деятельности.</p>
-              <p class="about-me__paragraph">Разумеется, профессиональный рост крайне важен для меня. Моя основная задача – развитие из неопытного новичка в профессионала. Моя ближайшая цель – присоединиться к среде разработчиков, трудиться на благо отечественной IT-индустрии и продолжать обучение в сфере frontend-разработки.</p>
+      <section id="resume" class="resume">
+
+        <div class="resume__wrapper">
+
+          <div class="resume__heading">
+            <div class="resume__heading-title">
+              <h2>Резюме</h2>
+              <span>Образование и опыт работы</span>
             </div>
           </div>
 
-          <div class="skillset skillset--visible">
-            <h2>Навыки</h2>
+          <div class="resume__container resume__container--left">
+            <h2>Высшее образование</h2>
+            <div class="resume__unit">
+              <div class="resume__unit resume__unit--left">
+                <span class="resume__item">MA in Linguistics</span>
+              </div>
+              <div class="resume__unit resume__unit--right">
 
-            <div class="skillset__wrapper">
-              <span class="skillset__caption">HTML5&nbsp;/&nbsp;CSS3</span>
-              <div class="skillset__bar">
-                <div class="skill skill--html"><span>Уверенно владею</span></div>
+                <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
+                </svg>
+                <span class="resume__study">Universit&#228;t Bayreuth</span>
+
+                <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                </svg>
+                <span class="resume__date">2011 &mdash; 2012</span>
+              </div>
+            </div>
+
+            <div class="resume__unit">
+              <div class="resume__unit resume__unit--left">
+                <span class="resume__item">Магистр филологии</span>
+              </div>
+              <div class="resume__unit resume__unit--right">
+
+                <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
+                </svg>
+                <span class="resume__study">МГПУ</span>
+
+                <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                </svg>
+                <span class="resume__date">2010 &mdash; 2012</span>
+              </div>
+            </div>
+
+            <div class="resume__unit">
+              <div class="resume__unit resume__unit--left">
+                <span class="resume__item">Бакалавр лингвистики</span>
+              </div>
+              <div class="resume__unit resume__unit--right">
+
+                <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
+                </svg>
+                <span class="resume__study">МГПУ</span>
+
+                <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                </svg>
+                <span class="resume__date">2006 &mdash; 2010</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume__container resume__container--right">
+            <h2>Опыт работы</h2>
+
+            <div class="resume__units">
+
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Аналитик</span>
+                </div>
+                <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
+                  <span class="resume__work">Р.Т Решения</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
+                  <span class="resume__date">2017 &mdash; настоящее время</span>
+                </div>
               </div>
 
-              <span class="skillset__caption">JavaScript</span>
-              <div class="skillset__bar">
-                <div class="skill skill--js"><span>Могу написать простой код</span></div>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Заместитель руководителя проекта по общим вопросам</span>
+                </div>
+                <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
+                  <span class="resume__work">ООО «Картеш»</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
+                  <span class="resume__date">2015 &mdash; 2017</span>
+                </div>
               </div>
 
-              <span class="skillset__caption">Git</span>
-              <div class="skillset__bar">
-                <div class="skill skill--git"><span>Есть опыт работы</span></div>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Специалист отдела студенческих инициатив</span>
+                </div>
+                <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
+                  <span class="resume__work">МГПУ</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
+                  <span class="resume__date">2013 &mdash; 2015</span>
+                </div>
               </div>
 
-              <span class="skillset__caption">Photoshop</span>
-              <div class="skillset__bar">
-                <div class="skill skill--ps"><span>Минимум для вёрстки</span></div>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Ассистент кафедры западноевропейских языков и переводоведения</span>
+                </div>
+                <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
+                  <span class="resume__work">МГПУ</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
+                  <span class="resume__date">2012 &mdash; 2013</span>
+                </div>
               </div>
 
-              <div class="skillset__else">
-                <strong class="skillset__else-caption">А также:</strong>
-                <ul>
-                  <li>БЭМ;</li>
-                  <li>LESS и SASS;</li>
-                  <li>Grunt и Gulp;</li>
-                  <li>адаптивная валидная кроссбраузерная вёрстка;</li>
-                  <li>небольшой опыт с JQuery и Bootstrap.</li>
-                </ul>
+              <div class="resume__unit">
+                <div class="resume__unit resume__unit--left">
+                  <span class="resume__item">Учитель английского языка</span>
+                </div>
+                <div class="resume__unit resume__unit--right">
+
+                  <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
+                  </svg>
+                  <span class="resume__work">ГБОУ СОШ № 723</span>
+
+                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
+                  </svg>
+                  <span class="resume__date">2010 &mdash; 2011</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-        <section id="resume" class="resume">
+      <section id="portfolio" class="portfolio">
 
-          <div class="resume__wrapper">
+        <div class="portfolio__wrapper">
 
-            <div class="resume__heading">
-              <div class="resume__heading-title">
-                <h2>Резюме</h2>
-                <span>Образование и опыт работы</span>
-              </div>
+          <h2>Портфолио</h2>
 
-              <div class="resume__download">
-                <a class="resume__download-link" href="docs/ivan-savitsky-ru.pdf" target="_blank">
-                  <span>Скачать в PDF</span>
-                  <svg class="resume__download-icon" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#download"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="resume__container resume__container--left">
-              <h2>Высшее образование</h2>
-              <div class="resume__unit">
-                <div class="resume__unit resume__unit--left">
-                  <span class="resume__item">MA in Linguistics</span>
-                </div>
-                <div class="resume__unit resume__unit--right">
-
-                  <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
-                  </svg>
-                  <span class="resume__study">Universit&#228;t Bayreuth</span>
-
-                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                  </svg>
-                  <span class="resume__date">2011 - 2012</span>
-                </div>
-              </div>
-
-              <div class="resume__unit">
-                <div class="resume__unit resume__unit--left">
-                  <span class="resume__item">Магистр филологии</span>
-                </div>
-                <div class="resume__unit resume__unit--right">
-
-                  <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
-                  </svg>
-                  <span class="resume__study">МГПУ</span>
-
-                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                  </svg>
-                  <span class="resume__date">2010 - 2012</span>
-                </div>
-              </div>
-
-              <div class="resume__unit">
-                <div class="resume__unit resume__unit--left">
-                  <span class="resume__item">Бакалавр лингвистики</span>
-                </div>
-                <div class="resume__unit resume__unit--right">
-
-                  <svg class="resume__unit-icon resume__unit-icon--cap" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#graduation-cap"></use>
-                  </svg>
-                  <span class="resume__study">МГПУ</span>
-
-                  <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                  </svg>
-                  <span class="resume__date">2006 - 2010</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="resume__container resume__container--right">
-              <h2>Опыт работы</h2>
-
-              <div class="resume__units">
-                <div class="resume__unit">
-                  <div class="resume__unit resume__unit--left">
-                    <span class="resume__item">Заместитель руководителя проекта по общим вопросам</span>
-                  </div>
-                  <div class="resume__unit resume__unit--right">
-
-                    <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
-                    </svg>
-                    <span class="resume__work">ООО «Картеш»</span>
-
-                    <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                    </svg>
-                    <span class="resume__date">2015 - настоящее время</span>
-                  </div>
-                </div>
-
-                <div class="resume__unit">
-                  <div class="resume__unit resume__unit--left">
-                    <span class="resume__item">Специалист отдела студенческих инициатив</span>
-                  </div>
-                  <div class="resume__unit resume__unit--right">
-
-                    <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
-                    </svg>
-                    <span class="resume__work">МГПУ</span>
-
-                    <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                    </svg>
-                    <span class="resume__date">2013 - 2015</span>
-                  </div>
-                </div>
-
-                <div class="resume__unit">
-                  <div class="resume__unit resume__unit--left">
-                    <span class="resume__item">Ассистент кафедры западноевропейских языков и переводоведения</span>
-                  </div>
-                  <div class="resume__unit resume__unit--right">
-
-                    <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
-                    </svg>
-                    <span class="resume__work">МГПУ</span>
-
-                    <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                    </svg>
-                    <span class="resume__date">2012 - 2013</span>
-                  </div>
-                </div>
-
-                <div class="resume__unit">
-                  <div class="resume__unit resume__unit--left">
-                    <span class="resume__item">Учитель английского языка</span>
-                  </div>
-                  <div class="resume__unit resume__unit--right">
-
-                    <svg class="resume__unit-icon resume__unit-icon--briefcase" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#briefcase"></use>
-                    </svg>
-                    <span class="resume__work">ГБОУ СОШ № 723</span>
-
-                    <svg class="resume__unit-icon resume__unit-icon--calendar" width="41" height="35">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#calendar"></use>
-                    </svg>
-                    <span class="resume__date">2010 - 2011</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="features">
-
-          <div class="features__wrapper">
-
-            <div class="features__why">
-              <h2>Почему я?</h2>
-              <ul class="features__why-list">
-                <li>Я нацелен на развитие в выбранной профессиональной области, готов (и хочу) обучаться;</li>
-                <li>я – дисциплинированный сотрудник, беру на себя ответственность за выполняемые задачи и легко вливаюсь в коллектив;</li>
-                <li>меня интересует долгосрочное и плодотворное сотрудничество с конкретной компанией;</li>
-                <li>свободный устный и письменный английский язык.</li>
-              </ul>
-            </div>
-
-            <div class="features__what">
-            <h2>Что я ищу?</h2>
-              <ul class="features__what-list">
-                <li>IT-компанию, заинтересованную в профессиональном развитии сотрудников;</li>
-                <li>работу с нешаблонными проектами;</li>
-                <li>«белую» заработную плату;</li>
-                <li>дружелюбный молодой коллектив.</li>
+          <div class="portfolio__item portfolio__item--gllacy">
+            <a class="portfolio__item-link portfolio__item-link--gllacy" href="gllacy/index.html" target="_blank">
+              <img class="portfolio__item-img portfolio__item-img--gllacy" src="img/gllacy-logo.png" alt="Gllacy logo" width="200" height="250">
+            </a>
+            <div class="portfolio__item-description portfolio__item-description--gllacy">
+              <p>
+                <a class="portfolio__item-description-link" href="gllacy/index.html" target="_blank">Gllacy Shop</a> – первый проект, выполненный в рамках базового интенсивного курса по HTML и CSS от HTML Академии.
+              </p>
+              <ul class="portfolio__item-description-list portfolio__item-description-list--gllacy">
+                <li>Сетка: float;</li>
+                <li>адаптивность: нет;</li>
+                <li>фреймворки: нет;</li>
+                <li>кроссбраузерность: IE10+, Chrome, Firefox, Opera, Safari;</li>
+                <li>прогрессивное улучшение.</li>
               </ul>
             </div>
           </div>
-        </section>
 
-        <section id="portfolio" class="portfolio">
-
-          <div class="portfolio__wrapper">
-
-            <h2>Портфолио</h2>
-
-            <div class="portfolio__item portfolio__item--gllacy">
-              <a class="portfolio__item-link portfolio__item-link--gllacy" href="gllacy/index.html" target="_blank">
-                <img class="portfolio__item-img portfolio__item-img--gllacy" src="img/gllacy-logo.png" alt="Gllacy logo" width="200" height="250">
-              </a>
-              <div class="portfolio__item-description portfolio__item-description--gllacy">
-                <p>
-                  <a class="portfolio__item-description-link" href="gllacy/index.html" target="_blank">Gllacy Shop</a> – первый проект, выполненный в рамках базового интенсивного курса по HTML и CSS от HTML Академии.
-                </p>
-                <ul class="portfolio__item-description-list portfolio__item-description-list--gllacy">
-                  <li>Сетка: float;</li>
-                  <li>адаптивность: нет;</li>
-                  <li>фреймворки: нет;</li>
-                  <li>кроссбраузерность: IE10+, Chrome, Firefox, Opera, Safari;</li>
-                  <li>прогрессивное улучшение.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="portfolio__item portfolio__item--sedona">
-              <a class="portfolio__item-link portfolio__item-link--sedona" href="sedona/index.html" target="_blank">
-                <svg class="portfolio__item-img portfolio__item-img--sedona" width="200" height="50">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sedona.svg#sedona"></use>
-                </svg>
-              </a>
-              <div class="portfolio__item-description portfolio__item-description--sedona">
-                <p>
-                  <a class="portfolio__item-description-link" href="sedona/index.html" target="_blank">Sedona</a> – проект, выполненный в рамках продвинутого интенсивного курса по HTML и CSS от HTML Академии.
-                </p>
-                <ul class="portfolio__item-description-list portfolio__item-description-list--sedona">
-                  <li>Сетка: flexbox;</li>
-                  <li>адаптивность сетки: мобильная, планшетная, десктопная версии («фикс»);</li>
-                  <li>адаптивность графики: ретинизация, векторные изображения;</li>
-                  <li>методология: БЭМ;</li>
-                  <li>препроцессор: LESS;</li>
-                  <li>автоматизация: Grunt;</li>
-                  <li>фреймворки: нет;</li>
-                  <li>кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11;</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="portfolio__item portfolio__item--hunt">
-              <a class="portfolio__item-link portfolio__item-link--hunt" href="#">
-                <svg class="portfolio__item-img portfolio__item-img--hunt" width="215" height="68">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#logo"></use>
-                </svg>
-              </a>
-              <div class="portfolio__item-description portfolio__item-description--hunt">
-                <p>
-                  Личный сайт-резюме.
-                </p>
-                <ul class="portfolio__item-description-list portfolio__item-description-list--hunt">
-                  <li>Сетка: flexbox, от ширины 1440px – «гриды»;</li>
-                  <li>адаптивность сетки: мобильная, планшетная, десктопная версии и версия для широких мониторов («резина»);</li>
-                  <li>адаптивность графики: ретинизация, векторные изображения;</li>
-                  <li>методология: БЭМ;</li>
-                  <li>препроцессор: SASS;</li>
-                  <li>автоматизация: Gulp;</li>
-                  <li>фреймворки: нет;</li>
-                  <li>кроссбраузерность: Chrome, Firefox, Opera, Edge и IE11;</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="portfolio__item portfolio__item--startex">
-              <a class="portfolio__item-link portfolio__item-link--startex" href="startex/index.html" target="_blank">
-                <img class="portfolio__item-img portfolio__item-img--startex" src="img/startex-logo.png" alt="Startex logo" width="103" height="47">
-              </a>
-              <div class="portfolio__item-description portfolio__item-description--startex">
-                <p>
-                  Шаблонный <a class="portfolio__item-description-link" href="startex/index.html" target="_blank">лендинг</a>.
-                </p>
-                <ul class="portfolio__item-description-list portfolio__item-description-list--hunt">
-                  <li>Сетка: flexbox;</li>
-                  <li>адаптивность сетки: нет;</li>
-                  <li>методология: БЭМ;</li>
-                  <li>препроцессор: Less;</li>
-                  <li>автоматизация: Gulp;</li>
-                  <li>кроссбраузерность: Chrome, Firefox, Opera, Edge и IE11;</li>
-                </ul>
-              </div>
+          <div class="portfolio__item portfolio__item--sedona">
+            <a class="portfolio__item-link portfolio__item-link--sedona" href="sedona/index.html" target="_blank">
+              <svg class="portfolio__item-img portfolio__item-img--sedona" width="200" height="50">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sedona.svg#sedona"></use>
+              </svg>
+            </a>
+            <div class="portfolio__item-description portfolio__item-description--sedona">
+              <p>
+                <a class="portfolio__item-description-link" href="sedona/index.html" target="_blank">Sedona</a> – проект, выполненный в рамках продвинутого интенсивного курса по HTML и CSS от HTML Академии.
+              </p>
+              <ul class="portfolio__item-description-list portfolio__item-description-list--sedona">
+                <li>Сетка: flexbox;</li>
+                <li>адаптивность сетки: мобильная, планшетная, десктопная версии («фикс»);</li>
+                <li>адаптивность графики: ретинизация, векторные изображения;</li>
+                <li>методология: БЭМ;</li>
+                <li>препроцессор: LESS;</li>
+                <li>автоматизация: Grunt;</li>
+                <li>фреймворки: нет;</li>
+                <li>кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11;</li>
+              </ul>
             </div>
           </div>
 
-        </section>
+          <div class="portfolio__item portfolio__item--hunt">
+            <a class="portfolio__item-link portfolio__item-link--hunt" href="#">
+              <svg class="portfolio__item-img portfolio__item-img--hunt" width="215" height="68">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-imgs.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="portfolio__item-description portfolio__item-description--hunt">
+              <p>
+                Личный сайт-резюме.
+              </p>
+              <ul class="portfolio__item-description-list portfolio__item-description-list--hunt">
+                <li>Сетка: flexbox, от ширины 1440px – «гриды»;</li>
+                <li>адаптивность сетки: мобильная, планшетная, десктопная версии и версия для широких мониторов («резина»);</li>
+                <li>адаптивность графики: ретинизация, векторные изображения;</li>
+                <li>методология: БЭМ;</li>
+                <li>препроцессор: SASS;</li>
+                <li>автоматизация: Gulp;</li>
+                <li>фреймворки: нет;</li>
+                <li>кроссбраузерность: Chrome, Firefox, Opera, Edge и IE11;</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="portfolio__item portfolio__item--startex">
+            <a class="portfolio__item-link portfolio__item-link--startex" href="startex/index.html" target="_blank">
+              <img class="portfolio__item-img portfolio__item-img--startex" src="img/startex-logo.png" alt="Startex logo" width="103" height="47">
+            </a>
+            <div class="portfolio__item-description portfolio__item-description--startex">
+              <p>
+                Шаблонный <a class="portfolio__item-description-link" href="startex/index.html" target="_blank">лендинг</a>.
+              </p>
+              <ul class="portfolio__item-description-list portfolio__item-description-list--hunt">
+                <li>Сетка: flexbox;</li>
+                <li>адаптивность сетки: нет;</li>
+                <li>методология: БЭМ;</li>
+                <li>препроцессор: Less;</li>
+                <li>автоматизация: Gulp;</li>
+                <li>кроссбраузерность: Chrome, Firefox, Opera, Edge и IE11;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
 
         <section id="certificates" class="certificates">
           <div class="certificates__wrapper">
