@@ -6,7 +6,7 @@ var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
-var minify = require("gulp-minify");
+var compress = require("gulp-minify");
 var del = require("del");
 
 var server = require("browser-sync").create();
@@ -96,7 +96,7 @@ gulp.task("images", function() {
 
 gulp.task("compress", function() {
   gulp.src("build/js/*.js")
-    .pipe(minify({
+    .pipe(compress({
         ext:{
             min:".min.js"
         },
