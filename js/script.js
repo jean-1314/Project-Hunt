@@ -18,7 +18,6 @@ var skillset = document.querySelector('.skillset');
 
 navMain.classList.remove('main-nav--nojs');
 // resumeToggle.classList.remove('resume__button--nojs');
-aboutMeBtn.classList.remove('about-me__btn--nojs');
 aboutMeBtnLess.style.display = 'none';
 
 // Language-switcher
